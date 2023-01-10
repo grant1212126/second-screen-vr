@@ -27536,7 +27536,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Pause
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -40712,7 +40712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineWidth: 0.02
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 10
+  m_LineLength: 100
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -41017,7 +41017,7 @@ MonoBehaviour:
   m_AllowHoverHapticsWhileSelecting: 1
   m_LineType: 0
   m_BlendVisualLinePoints: 1
-  m_MaxRaycastDistance: 30
+  m_MaxRaycastDistance: 10000
   m_RayOriginTransform: {fileID: 0}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 16
@@ -44820,7 +44820,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349033935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -359.1}
+  m_LocalPosition: {x: 0, y: 0, z: -305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -44828,10 +44828,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 2708.4, y: 176.62057}
-  m_SizeDelta: {x: 260, y: 150}
+  m_SizeDelta: {x: 1102, y: 519}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1349033941
 MonoBehaviour:
@@ -44845,7 +44845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec73f62072c833d439ee782fb85f65e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 0}
+  videoPlayer: {fileID: 2121725467}
 --- !u!1 &1360850602
 GameObject:
   m_ObjectHideFlags: 0
@@ -51186,8 +51186,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 0.8301887, g: 0.1527234, b: 0.1527234, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -51209,10 +51209,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1349033935}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
-        m_Mode: 5
+      - m_Target: {fileID: 1349033941}
+        m_TargetAssemblyTypeName: VideoControl, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -52575,7 +52575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineWidth: 0.02
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 10
+  m_LineLength: 0
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -52880,7 +52880,7 @@ MonoBehaviour:
   m_AllowHoverHapticsWhileSelecting: 1
   m_LineType: 0
   m_BlendVisualLinePoints: 1
-  m_MaxRaycastDistance: 30
+  m_MaxRaycastDistance: 10000
   m_RayOriginTransform: {fileID: 0}
   m_ReferenceFrame: {fileID: 0}
   m_Velocity: 16

@@ -27,8 +27,8 @@ public class VideoControl : MonoBehaviour
 
         userControls = new XRIDefaultInputActions();
 
-        userControls.XRILeftHandInteraction.Activate.performed += _ => Pause();
-        userControls.XRIRightHandInteraction.Activate.performed += _ => Pause();
+        //userControls.XRILeftHandInteraction.Activate.performed += _ => Pause();
+        //userControls.XRIRightHandInteraction.Activate.performed += _ => Pause();
         userControls.KeyboardInteractions.Space.performed += _ => Pause();
     }
 
