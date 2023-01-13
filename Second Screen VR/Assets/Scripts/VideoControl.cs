@@ -12,8 +12,7 @@ public class VideoControl : MonoBehaviour
 {
 
     private XRIDefaultInputActions userControls;
-    public VideoPlayer videoPlayer;
-    GameObject button;
+    public GameObject[] Screens;
 
     // Start is called before the first frame update
     void Start()
@@ -52,15 +51,27 @@ public class VideoControl : MonoBehaviour
 
     public void Pause()
     {
-        if (videoPlayer.isPaused)
+
+        Screens = GetComponent<ExperimentControl>().Screens;
+
+        for (int i = 0; i <= Screens.Length; i++)
         {
-            videoPlayer.Play();
-            Debug.Log("Video Unpaused");
+            if (Screens[i].GetComponent<ScreenActive>().isActive) {
+            
+
+                if (Screens[i].GetComponent<VideoPlayer>().isPaused)
+                {
+                    Screens[i].GetComponent<VideoPlayer>().Play();
+                    Debug.Log("Video Unpaused");
+                }
+                else
+                {
+                    Screens[i].GetComponent<VideoPlayer>().Pause();
+                    Debug.Log("Video Paused");
+                }
+            }
         }
-        else
-        {
-            videoPlayer.Pause();
-            Debug.Log("Video Paused");
-        }
+
     }
+
 }
