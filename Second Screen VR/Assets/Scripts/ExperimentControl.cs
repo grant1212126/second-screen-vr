@@ -13,11 +13,12 @@ public class ExperimentControl : MonoBehaviour
     public GameObject phoneScreen;
 
     public GameObject[] Screens;
+    public VideoClip[] videoClips;
 
     VideoControl videoController;
 
-    int videoNumber;
-    string videoUrl; 
+    string videoUrl;
+    string factsUrl;
 
     // Start is called before the first frame update
     void Start()
@@ -29,29 +30,26 @@ public class ExperimentControl : MonoBehaviour
     {
 
         videoUrl = Application.dataPath + "/Videos/video_1.mp4";
+        factsUrl = Application.dataPath + "/Videos/facts_1.mp4";
 
         Screens = new GameObject[4];
-
 
         Screens[0] = mainScreen;
         Screens[1] = sideScreen;
         Screens[2] = monitorScreen;
         Screens[3] = phoneScreen;
 
-        videoNumber = 1;
-
         enableScreen(mainScreen);
 
         disableScreen(monitorScreen);
         disableScreen(phoneScreen);
 
+
         startSection(sideScreen, 1);
 
-        startSection(monitorScreen, 1);
-
-        startSection(phoneScreen, 1);
-
         //startSection(monitorScreen, 2);
+
+        //startSection(phoneScreen, 3);
     }
 
     // Update is called once per frame
@@ -77,18 +75,14 @@ public class ExperimentControl : MonoBehaviour
 
         enableScreen(Secondscreen);
 
-        length = PlayVideo(Secondscreen.GetComponent<VideoPlayer>(), videoUrl);
-        PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoUrl);
+        videoUrl = parseVideoNumberIntoPath(videoUrl, videoNumber);
+        factsUrl = parseVideoNumberIntoPath(factsUrl, videoNumber);
 
-        StartCoroutine(waiter(length, Secondscreen));
+        length =
 
-    }
+        PlayVideo(Secondscreen.GetComponent<VideoPlayer>(), factsUrl);
+        length = PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoUrl);
 
-    IEnumerator waiter(double len, GameObject Secondscreen)
-    {
-        yield return new WaitForSeconds((int) len);
-
-        endSection(Secondscreen);
     }
 
     public double PlayVideo(VideoPlayer player, string videoName)
@@ -99,29 +93,18 @@ public class ExperimentControl : MonoBehaviour
 
         Debug.Log("Playing video..");
 
-        double len = 7; // placeholder
-
-        Debug.Log(len);
+        double len = 100; // placeholder
 
         return (len);
     }
 
     public string parseVideoNumberIntoPath(string videoUrl, int videoNumber)
     {
-        videoUrl = videoUrl.Remove(videoUrl.Length -5, 1);
+        videoUrl = videoUrl.Remove(videoUrl.Length - 5);
 
         videoUrl = videoUrl + videoNumber + ".mp4";
 
         return (videoUrl);
-    }
-
-    public void endSection(GameObject screen)
-    {
-        videoNumber += 1;
-
-        videoUrl = parseVideoNumberIntoPath(videoUrl, videoNumber);
-
-        disableScreen(screen);
     }
 
 }
