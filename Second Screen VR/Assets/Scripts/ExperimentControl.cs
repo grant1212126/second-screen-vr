@@ -14,6 +14,7 @@ public class ExperimentControl : MonoBehaviour
 
     public GameObject[] Screens;
     public VideoClip[] videoClips;
+    public VideoClip[] factClips;
 
     VideoControl videoController;
 
@@ -29,9 +30,6 @@ public class ExperimentControl : MonoBehaviour
     void Awake()
     {
 
-        videoUrl = Application.dataPath + "/Videos/video_1.mp4";
-        factsUrl = Application.dataPath + "/Videos/facts_1.mp4";
-
         Screens = new GameObject[4];
 
         Screens[0] = mainScreen;
@@ -45,7 +43,7 @@ public class ExperimentControl : MonoBehaviour
         disableScreen(phoneScreen);
 
 
-        startSection(sideScreen, 1);
+        startSection(sideScreen, 0);
 
         //startSection(monitorScreen, 2);
 
@@ -68,43 +66,23 @@ public class ExperimentControl : MonoBehaviour
         screen.SetActive(false);
     }
 
-
     public void startSection(GameObject Secondscreen, int videoNumber)
     {
-        double length;
 
         enableScreen(Secondscreen);
 
-        videoUrl = parseVideoNumberIntoPath(videoUrl, videoNumber);
-        factsUrl = parseVideoNumberIntoPath(factsUrl, videoNumber);
-
-        length =
-
-        PlayVideo(Secondscreen.GetComponent<VideoPlayer>(), factsUrl);
-        length = PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoUrl);
+        PlayVideo(Secondscreen.GetComponent<VideoPlayer>(), videoClips[videoNumber]);
+        PlayVideo(mainScreen.GetComponent<VideoPlayer>(), factClips[videoNumber]);
 
     }
 
-    public double PlayVideo(VideoPlayer player, string videoName)
+    public void PlayVideo(VideoPlayer player, VideoClip clip)
     {
-        player.url = videoName;
+        player.clip = clip;
 
         player.Play();
 
-        Debug.Log("Playing video..");
-
-        double len = 100; // placeholder
-
-        return (len);
-    }
-
-    public string parseVideoNumberIntoPath(string videoUrl, int videoNumber)
-    {
-        videoUrl = videoUrl.Remove(videoUrl.Length - 5);
-
-        videoUrl = videoUrl + videoNumber + ".mp4";
-
-        return (videoUrl);
+        Debug.Log(player.clip.length);
     }
 
 }
