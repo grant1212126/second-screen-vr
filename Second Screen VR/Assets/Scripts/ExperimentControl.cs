@@ -71,8 +71,8 @@ public class ExperimentControl : MonoBehaviour
 
         enableScreen(Secondscreen);
 
-        PlayVideo(Secondscreen.GetComponent<VideoPlayer>(), videoClips[videoNumber]);
-        PlayVideo(mainScreen.GetComponent<VideoPlayer>(), factClips[videoNumber]);
+        PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoClips[videoNumber]);
+        PlayVideo(Secondscreen.GetComponent<VideoPlayer>(), factClips[videoNumber]);
 
     }
 
