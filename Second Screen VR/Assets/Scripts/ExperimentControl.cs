@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Video;
 using UnityEngine;
+using TMPro;
 
 public class ExperimentControl : MonoBehaviour
 {
@@ -18,8 +19,11 @@ public class ExperimentControl : MonoBehaviour
 
     VideoControl videoController;
 
-    string videoUrl;
-    string factsUrl;
+    public int[] videoOrder;
+
+    public AudioSource audioSource;
+
+    int videoCount;
 
     // Start is called before the first frame update
     void Start()
@@ -30,24 +34,17 @@ public class ExperimentControl : MonoBehaviour
     void Awake()
     {
 
-        Screens = new GameObject[4];
+        Screens = new GameObject[3];
 
-        Screens[0] = mainScreen;
-        Screens[1] = sideScreen;
-        Screens[2] = monitorScreen;
-        Screens[3] = phoneScreen;
+        Screens[0] = sideScreen;
+        Screens[1] = monitorScreen;
+        Screens[2] = phoneScreen;
 
-        enableScreen(mainScreen);
+        enableObject(mainScreen);
 
-        disableScreen(monitorScreen);
-        disableScreen(phoneScreen);
+        disableObject(monitorScreen);
+        disableObject(phoneScreen);
 
-
-        startSection(sideScreen, 0);
-
-        //startSection(monitorScreen, 2);
-
-        //startSection(phoneScreen, 3);
     }
 
     // Update is called once per frame
@@ -56,33 +53,112 @@ public class ExperimentControl : MonoBehaviour
         
     }
 
-    public void enableScreen(GameObject screen)
+    public void enableObject(GameObject item)
     {
-        screen.SetActive(true);
+        item.SetActive(true);
     }
 
-    public void disableScreen(GameObject screen)
+    public void disableObject(GameObject item)
     {
-        screen.SetActive(false);
+        item.SetActive(false);
     }
 
-    public void startSection(GameObject Secondscreen, int videoNumber)
+    public void startExperiment()
+    {
+        if (GameObject.Find("Key Pad Input").GetComponent<TMP_InputField>().text == "" || GameObject.Find("Video Order Input").GetComponent<TMP_InputField>().text == "")
+        {
+            return;
+        }
+
+        string videoOrderNumber = GameObject.Find("Video Order Input").GetComponent<TMP_InputField>().text;
+
+        videoOrder = new int[4];
+
+        switch(videoOrderNumber)
+        {
+            case "1":
+                videoOrder[0] = 0;
+                videoOrder[1] = 1;
+                videoOrder[2] = 2;
+                videoOrder[3] = 3;
+                break;
+
+            case "2":
+                videoOrder[0] = 3;
+                videoOrder[1] = 0;
+                videoOrder[2] = 1;
+                videoOrder[3] = 2;
+                break;
+
+            case "3":
+                videoOrder[0] = 2;
+                videoOrder[1] = 3;
+                videoOrder[2] = 0;
+                videoOrder[3] = 1;
+                break;
+
+            case "4":
+                videoOrder[0] = 1;
+                videoOrder[1] = 2;
+                videoOrder[2] = 3;
+                videoOrder[3] = 0;
+                break;
+
+        }
+
+        disableObject(GameObject.Find("Canvas"));
+
+        StartCoroutine(startSection(videoOrder[0]));
+
+        StartCoroutine(startSection(Screens[0], videoOrder[1]));
+
+        StartCoroutine(startSection(Screens[1], videoOrder[2]));
+
+        StartCoroutine(startSection(Screens[2], videoOrder[3]));
+    }
+
+    IEnumerator startSection(GameObject Secondscreen, int videoNumber)
     {
 
-        enableScreen(Secondscreen);
+        //disableObject(Canvas);
 
-        PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoClips[videoNumber]);
+        enableObject(Secondscreen);
+
+        int length = PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoClips[videoNumber]);
         PlayVideo(Secondscreen.GetComponent<VideoPlayer>(), factClips[videoNumber]);
 
+        yield return new WaitForSeconds(length);
+
+        disableObject(Secondscreen);
+
+        yield return new WaitForSeconds(10);
+
+        //enableObject(Canvas);
+
     }
 
-    public void PlayVideo(VideoPlayer player, VideoClip clip)
+    IEnumerator startSection(int videoNumber)
+    {
+
+        int length = PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoClips[videoNumber]);
+
+        yield return new WaitForSeconds(length);
+
+    }
+
+    IEnumerator wait(int seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+    }
+
+    public int PlayVideo(VideoPlayer player, VideoClip clip)
     {
         player.clip = clip;
 
         player.Play();
 
-        Debug.Log(player.clip.length);
+        return ((int)player.clip.length);
     }
 
 }
+ 
