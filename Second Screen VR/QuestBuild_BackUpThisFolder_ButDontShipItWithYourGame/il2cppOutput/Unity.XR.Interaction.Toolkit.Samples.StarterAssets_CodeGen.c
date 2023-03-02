@@ -1,0 +1,1163 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 UnityEngine.InputSystem.InputActionAsset XRIDefaultInputActions::get_asset()
+extern void XRIDefaultInputActions_get_asset_m86306CA6AA158117CEDF794C2C2943AAC4CB8FCF (void);
+// 0x00000002 System.Void XRIDefaultInputActions::.ctor()
+extern void XRIDefaultInputActions__ctor_mEED675845BA2C6684E99E27C4E938F045D8DC897 (void);
+// 0x00000003 System.Void XRIDefaultInputActions::Dispose()
+extern void XRIDefaultInputActions_Dispose_m5681B9950133F869016830D5F1B112FE7CA9413E (void);
+// 0x00000004 System.Nullable`1<UnityEngine.InputSystem.InputBinding> XRIDefaultInputActions::get_bindingMask()
+extern void XRIDefaultInputActions_get_bindingMask_m4738FB286A9DFDF22451FE2FE41BB4FA9F454537 (void);
+// 0x00000005 System.Void XRIDefaultInputActions::set_bindingMask(System.Nullable`1<UnityEngine.InputSystem.InputBinding>)
+extern void XRIDefaultInputActions_set_bindingMask_m6D949AB3A0AA6385E3269487B18473258F031709 (void);
+// 0x00000006 System.Nullable`1<UnityEngine.InputSystem.Utilities.ReadOnlyArray`1<UnityEngine.InputSystem.InputDevice>> XRIDefaultInputActions::get_devices()
+extern void XRIDefaultInputActions_get_devices_mA10E0774285837715BE56931C236FF7233CC0A01 (void);
+// 0x00000007 System.Void XRIDefaultInputActions::set_devices(System.Nullable`1<UnityEngine.InputSystem.Utilities.ReadOnlyArray`1<UnityEngine.InputSystem.InputDevice>>)
+extern void XRIDefaultInputActions_set_devices_m9C0F245507890C7DB2F66AB96E169725EF1D35BF (void);
+// 0x00000008 UnityEngine.InputSystem.Utilities.ReadOnlyArray`1<UnityEngine.InputSystem.InputControlScheme> XRIDefaultInputActions::get_controlSchemes()
+extern void XRIDefaultInputActions_get_controlSchemes_m9E26F3EBE720E7338B773D2E756EF3DB43B4A369 (void);
+// 0x00000009 System.Boolean XRIDefaultInputActions::Contains(UnityEngine.InputSystem.InputAction)
+extern void XRIDefaultInputActions_Contains_mBCFE283224FA909FE3B2F6B03ED6618065C7699D (void);
+// 0x0000000A System.Collections.Generic.IEnumerator`1<UnityEngine.InputSystem.InputAction> XRIDefaultInputActions::GetEnumerator()
+extern void XRIDefaultInputActions_GetEnumerator_mA46BF47C6A3E8D51E7575C1A8CA2F5DC460BDF40 (void);
+// 0x0000000B System.Collections.IEnumerator XRIDefaultInputActions::System.Collections.IEnumerable.GetEnumerator()
+extern void XRIDefaultInputActions_System_Collections_IEnumerable_GetEnumerator_m17F9EAA19EC6245C58F4422444885E72ED6CC808 (void);
+// 0x0000000C System.Void XRIDefaultInputActions::Enable()
+extern void XRIDefaultInputActions_Enable_m739391FD6E1EB64ED394AD3992122CA8BAB1C72A (void);
+// 0x0000000D System.Void XRIDefaultInputActions::Disable()
+extern void XRIDefaultInputActions_Disable_m8A2C6C108F3DC0B22180070040AB70F1F1C3E175 (void);
+// 0x0000000E System.Collections.Generic.IEnumerable`1<UnityEngine.InputSystem.InputBinding> XRIDefaultInputActions::get_bindings()
+extern void XRIDefaultInputActions_get_bindings_mF624E1763C91B6900B92E4944D47B566ACED801B (void);
+// 0x0000000F UnityEngine.InputSystem.InputAction XRIDefaultInputActions::FindAction(System.String,System.Boolean)
+extern void XRIDefaultInputActions_FindAction_m7E64A51A4114253083E944D390E7E40F63EC8AE0 (void);
+// 0x00000010 System.Int32 XRIDefaultInputActions::FindBinding(UnityEngine.InputSystem.InputBinding,UnityEngine.InputSystem.InputAction&)
+extern void XRIDefaultInputActions_FindBinding_mEFB87CC4EC9797EA18E88138D94685A3587C34AE (void);
+// 0x00000011 XRIDefaultInputActions/XRIHeadActions XRIDefaultInputActions::get_XRIHead()
+extern void XRIDefaultInputActions_get_XRIHead_mB42FB11FC0784EFB4AE390733343E2C9824D3A92 (void);
+// 0x00000012 XRIDefaultInputActions/XRILeftHandActions XRIDefaultInputActions::get_XRILeftHand()
+extern void XRIDefaultInputActions_get_XRILeftHand_m9633F41E04108FEEBC2C840BF9B777146B716F7E (void);
+// 0x00000013 XRIDefaultInputActions/XRILeftHandInteractionActions XRIDefaultInputActions::get_XRILeftHandInteraction()
+extern void XRIDefaultInputActions_get_XRILeftHandInteraction_mC7BBB5F7E68E472A5B0047E1CDE16043C2C0AEEA (void);
+// 0x00000014 XRIDefaultInputActions/XRILeftHandLocomotionActions XRIDefaultInputActions::get_XRILeftHandLocomotion()
+extern void XRIDefaultInputActions_get_XRILeftHandLocomotion_mC270627DA333003B83DF09951F3B0736F19D21AD (void);
+// 0x00000015 XRIDefaultInputActions/XRIRightHandActions XRIDefaultInputActions::get_XRIRightHand()
+extern void XRIDefaultInputActions_get_XRIRightHand_m3561B1234F65F649F5F438F0D47644506ED13C35 (void);
+// 0x00000016 XRIDefaultInputActions/XRIRightHandInteractionActions XRIDefaultInputActions::get_XRIRightHandInteraction()
+extern void XRIDefaultInputActions_get_XRIRightHandInteraction_m6C3B79449D4F904B80EFF1B902F5C20D668CA2FB (void);
+// 0x00000017 XRIDefaultInputActions/XRIRightHandLocomotionActions XRIDefaultInputActions::get_XRIRightHandLocomotion()
+extern void XRIDefaultInputActions_get_XRIRightHandLocomotion_m7DB9E9DFD9EF2E08CCBBE87C67D47A1A0CAF974A (void);
+// 0x00000018 XRIDefaultInputActions/XRIUIActions XRIDefaultInputActions::get_XRIUI()
+extern void XRIDefaultInputActions_get_XRIUI_m4E13B319A5897D5793728835D547CC24584B4D49 (void);
+// 0x00000019 XRIDefaultInputActions/KeyboardInteractionsActions XRIDefaultInputActions::get_KeyboardInteractions()
+extern void XRIDefaultInputActions_get_KeyboardInteractions_mA2AE42B8CFD8CCF64215DF0855787FD01E96A14C (void);
+// 0x0000001A UnityEngine.InputSystem.InputControlScheme XRIDefaultInputActions::get_GenericXRControllerScheme()
+extern void XRIDefaultInputActions_get_GenericXRControllerScheme_m373111F79264E808AF5336BAAFC9CA5C5B5DE280 (void);
+// 0x0000001B UnityEngine.InputSystem.InputControlScheme XRIDefaultInputActions::get_ContinuousMoveScheme()
+extern void XRIDefaultInputActions_get_ContinuousMoveScheme_m26F5A6AE551D14789BFFBCB3C8B3ACF16C83CF11 (void);
+// 0x0000001C UnityEngine.InputSystem.InputControlScheme XRIDefaultInputActions::get_NoncontinuousMoveScheme()
+extern void XRIDefaultInputActions_get_NoncontinuousMoveScheme_m0A17259456A6676DF431D95E5E861888DD44F99B (void);
+// 0x0000001D System.Void XRIDefaultInputActions/XRIHeadActions::.ctor(XRIDefaultInputActions)
+extern void XRIHeadActions__ctor_m2C79297594A86840467246813612EA95B5C0D505 (void);
+// 0x0000001E UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIHeadActions::get_Position()
+extern void XRIHeadActions_get_Position_mCB0684C609739C96B6044E3B654085BD1036BD72 (void);
+// 0x0000001F UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIHeadActions::get_Rotation()
+extern void XRIHeadActions_get_Rotation_m0D711C837A21AA163F6582BF5D6991623FF1055C (void);
+// 0x00000020 UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRIHeadActions::Get()
+extern void XRIHeadActions_Get_m6E3648FA2C90F0520AA1F257EA37BF1B362DCA0C (void);
+// 0x00000021 System.Void XRIDefaultInputActions/XRIHeadActions::Enable()
+extern void XRIHeadActions_Enable_m65E3157B9B9DEC5E1DAE58F276392F91A2D0E9B4 (void);
+// 0x00000022 System.Void XRIDefaultInputActions/XRIHeadActions::Disable()
+extern void XRIHeadActions_Disable_m64A1349E803B52CD2A93B970E03452528D212F62 (void);
+// 0x00000023 System.Boolean XRIDefaultInputActions/XRIHeadActions::get_enabled()
+extern void XRIHeadActions_get_enabled_m7420ED3378E957BDB481A559A8159CC1ED0DD528 (void);
+// 0x00000024 UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRIHeadActions::op_Implicit(XRIDefaultInputActions/XRIHeadActions)
+extern void XRIHeadActions_op_Implicit_mF459429B3B8F74D4E024BD2F7EE7142023156FC2 (void);
+// 0x00000025 System.Void XRIDefaultInputActions/XRIHeadActions::SetCallbacks(XRIDefaultInputActions/IXRIHeadActions)
+extern void XRIHeadActions_SetCallbacks_m31E977056A4FA03F9E05238451670687DE914E42 (void);
+// 0x00000026 System.Void XRIDefaultInputActions/XRILeftHandActions::.ctor(XRIDefaultInputActions)
+extern void XRILeftHandActions__ctor_mD9DB93543EB37C78BB469A9D2319BE8F3DAE66E2 (void);
+// 0x00000027 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandActions::get_Position()
+extern void XRILeftHandActions_get_Position_mB96304BCF424F25103050DC453A2B0E0B74E1843 (void);
+// 0x00000028 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandActions::get_Rotation()
+extern void XRILeftHandActions_get_Rotation_mEACB83BE2FD56BE7083F9EC02C5D548F53319F73 (void);
+// 0x00000029 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandActions::get_TrackingState()
+extern void XRILeftHandActions_get_TrackingState_mB3DD3ABBA80FF66A302D890E1214E07FCCF3BD84 (void);
+// 0x0000002A UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandActions::get_HapticDevice()
+extern void XRILeftHandActions_get_HapticDevice_m0A5534F93E71161DCF1AD4C33A185514626D1545 (void);
+// 0x0000002B UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRILeftHandActions::Get()
+extern void XRILeftHandActions_Get_mE114999F7F2B3650D8902E53441D269371BCF28E (void);
+// 0x0000002C System.Void XRIDefaultInputActions/XRILeftHandActions::Enable()
+extern void XRILeftHandActions_Enable_mEA77F2BA77FA85855DC2959E3113963B035E5803 (void);
+// 0x0000002D System.Void XRIDefaultInputActions/XRILeftHandActions::Disable()
+extern void XRILeftHandActions_Disable_m0D3EB5DF14852A6320E6C1D9ADAC1FED86F1B873 (void);
+// 0x0000002E System.Boolean XRIDefaultInputActions/XRILeftHandActions::get_enabled()
+extern void XRILeftHandActions_get_enabled_mD0FC7456F89B6546CB676DA02210E60CF4FF2AC9 (void);
+// 0x0000002F UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRILeftHandActions::op_Implicit(XRIDefaultInputActions/XRILeftHandActions)
+extern void XRILeftHandActions_op_Implicit_mE638E127E2BBBCA08A9C45AF9969E1C25EBE5C40 (void);
+// 0x00000030 System.Void XRIDefaultInputActions/XRILeftHandActions::SetCallbacks(XRIDefaultInputActions/IXRILeftHandActions)
+extern void XRILeftHandActions_SetCallbacks_m366CBA84473534F1DE5CC7A22E9425B23FD0AF78 (void);
+// 0x00000031 System.Void XRIDefaultInputActions/XRILeftHandInteractionActions::.ctor(XRIDefaultInputActions)
+extern void XRILeftHandInteractionActions__ctor_m2421B1D6EDF8F5899024A762663F8FEF4948B246 (void);
+// 0x00000032 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandInteractionActions::get_Select()
+extern void XRILeftHandInteractionActions_get_Select_m6077D94A06122354849DFBD0EBE57AB3197C7CF7 (void);
+// 0x00000033 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandInteractionActions::get_SelectValue()
+extern void XRILeftHandInteractionActions_get_SelectValue_m59E2DFDABA6053F32A1BFD4B6EC1669BC26732C2 (void);
+// 0x00000034 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandInteractionActions::get_Activate()
+extern void XRILeftHandInteractionActions_get_Activate_m73180F7F14DDB792CF14E64AB75F9A74EF351A46 (void);
+// 0x00000035 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandInteractionActions::get_ActivateValue()
+extern void XRILeftHandInteractionActions_get_ActivateValue_mBEB2BAD498A415AA2623D92E7F6D7ACA21BD3B11 (void);
+// 0x00000036 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandInteractionActions::get_UIPress()
+extern void XRILeftHandInteractionActions_get_UIPress_m38AF3C049F839A671F974D6F9239B6DE08CBA791 (void);
+// 0x00000037 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandInteractionActions::get_UIPressValue()
+extern void XRILeftHandInteractionActions_get_UIPressValue_mA617CE5CC0131ACBD771EE35DF10AC8D7F8B3756 (void);
+// 0x00000038 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandInteractionActions::get_RotateAnchor()
+extern void XRILeftHandInteractionActions_get_RotateAnchor_m8C2E6A22FA214AB9A0B534B3421512A3B5D7C8FA (void);
+// 0x00000039 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandInteractionActions::get_TranslateAnchor()
+extern void XRILeftHandInteractionActions_get_TranslateAnchor_m142A788D46F74CD4F1648F53BDD855057D09DA4B (void);
+// 0x0000003A UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRILeftHandInteractionActions::Get()
+extern void XRILeftHandInteractionActions_Get_m311202F47415DEFC147B70A69492CE6ACA3A4E00 (void);
+// 0x0000003B System.Void XRIDefaultInputActions/XRILeftHandInteractionActions::Enable()
+extern void XRILeftHandInteractionActions_Enable_mAF78A8C3781522E6989C5933ABCDD2FEA3BD3E04 (void);
+// 0x0000003C System.Void XRIDefaultInputActions/XRILeftHandInteractionActions::Disable()
+extern void XRILeftHandInteractionActions_Disable_m83F4280B7DC1A54AC1D29B8CF0B1163FC5649DA1 (void);
+// 0x0000003D System.Boolean XRIDefaultInputActions/XRILeftHandInteractionActions::get_enabled()
+extern void XRILeftHandInteractionActions_get_enabled_mCC2EE36CB93AA21FFE34D34FDD2C9D67B604FEF3 (void);
+// 0x0000003E UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRILeftHandInteractionActions::op_Implicit(XRIDefaultInputActions/XRILeftHandInteractionActions)
+extern void XRILeftHandInteractionActions_op_Implicit_mDF52EAD9F22622A5CC546AB1B392768EC16549E6 (void);
+// 0x0000003F System.Void XRIDefaultInputActions/XRILeftHandInteractionActions::SetCallbacks(XRIDefaultInputActions/IXRILeftHandInteractionActions)
+extern void XRILeftHandInteractionActions_SetCallbacks_mC9E68B1FEFDA69409FC220733E72477AC8BCFA83 (void);
+// 0x00000040 System.Void XRIDefaultInputActions/XRILeftHandLocomotionActions::.ctor(XRIDefaultInputActions)
+extern void XRILeftHandLocomotionActions__ctor_m8622F2E7CBBFBCDD789CB85A1A1E061CF10EEE27 (void);
+// 0x00000041 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandLocomotionActions::get_TeleportSelect()
+extern void XRILeftHandLocomotionActions_get_TeleportSelect_mB3EDF296F8832588A2FA552AB9251AE1EBD8A1B0 (void);
+// 0x00000042 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandLocomotionActions::get_TeleportModeActivate()
+extern void XRILeftHandLocomotionActions_get_TeleportModeActivate_mE2D4999193C313BC472D8466331962AE58E0BAA6 (void);
+// 0x00000043 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandLocomotionActions::get_TeleportModeCancel()
+extern void XRILeftHandLocomotionActions_get_TeleportModeCancel_m576664594676144DA94FBC7E628E7DFFB9C3245F (void);
+// 0x00000044 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandLocomotionActions::get_TeleportDirection()
+extern void XRILeftHandLocomotionActions_get_TeleportDirection_mB491C7B88FEBD6ED10528151E5A03794652A0779 (void);
+// 0x00000045 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandLocomotionActions::get_Turn()
+extern void XRILeftHandLocomotionActions_get_Turn_m187619A2F68F17E92FD6A3A2CED45DA6CCAAC3EF (void);
+// 0x00000046 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandLocomotionActions::get_Move()
+extern void XRILeftHandLocomotionActions_get_Move_m534FB200DE77539FEF23425AF8CF84F966AE0542 (void);
+// 0x00000047 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandLocomotionActions::get_GrabMove()
+extern void XRILeftHandLocomotionActions_get_GrabMove_mA42CCE816AD85F15FBD2FEF906326DC71FBE1C83 (void);
+// 0x00000048 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRILeftHandLocomotionActions::get_SnapTurn()
+extern void XRILeftHandLocomotionActions_get_SnapTurn_mC3736DDF91A4760EC74238472E4EDD8B3F767412 (void);
+// 0x00000049 UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRILeftHandLocomotionActions::Get()
+extern void XRILeftHandLocomotionActions_Get_m41D7B1CCD75F93F12FC04230DD496D3021525A9B (void);
+// 0x0000004A System.Void XRIDefaultInputActions/XRILeftHandLocomotionActions::Enable()
+extern void XRILeftHandLocomotionActions_Enable_m551BAC3DA3732F50780F0EE0B2A9A968DF9C509C (void);
+// 0x0000004B System.Void XRIDefaultInputActions/XRILeftHandLocomotionActions::Disable()
+extern void XRILeftHandLocomotionActions_Disable_m3C23EE745324A16059C17473624BFFA9DA151BF4 (void);
+// 0x0000004C System.Boolean XRIDefaultInputActions/XRILeftHandLocomotionActions::get_enabled()
+extern void XRILeftHandLocomotionActions_get_enabled_m48AD07CF7B6366B71F38BF67D1E6E07C2980382F (void);
+// 0x0000004D UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRILeftHandLocomotionActions::op_Implicit(XRIDefaultInputActions/XRILeftHandLocomotionActions)
+extern void XRILeftHandLocomotionActions_op_Implicit_mF269B0670CF64382B2BF88EB90D7D57FB293B9F6 (void);
+// 0x0000004E System.Void XRIDefaultInputActions/XRILeftHandLocomotionActions::SetCallbacks(XRIDefaultInputActions/IXRILeftHandLocomotionActions)
+extern void XRILeftHandLocomotionActions_SetCallbacks_mF6B12AB110DE149BF723FC4974221C5B53F1041B (void);
+// 0x0000004F System.Void XRIDefaultInputActions/XRIRightHandActions::.ctor(XRIDefaultInputActions)
+extern void XRIRightHandActions__ctor_mF2CB7EEAF7562D0F7022C152DBD11A58A80690CC (void);
+// 0x00000050 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandActions::get_Position()
+extern void XRIRightHandActions_get_Position_m9F732B618668D433D18274114B086A3D766681F6 (void);
+// 0x00000051 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandActions::get_Rotation()
+extern void XRIRightHandActions_get_Rotation_m8AA4D1F2806DDD9D3842A8EF24159E4A68953083 (void);
+// 0x00000052 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandActions::get_TrackingState()
+extern void XRIRightHandActions_get_TrackingState_m1CFB70836A483F41E5F2474355CC9D7FC495D597 (void);
+// 0x00000053 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandActions::get_HapticDevice()
+extern void XRIRightHandActions_get_HapticDevice_mFAF7E89221FE248B1A7F3A4DA411FA3A30EAB54A (void);
+// 0x00000054 UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRIRightHandActions::Get()
+extern void XRIRightHandActions_Get_m853DF89088D4B0B0FC901AB517BF1CE07D9B763E (void);
+// 0x00000055 System.Void XRIDefaultInputActions/XRIRightHandActions::Enable()
+extern void XRIRightHandActions_Enable_m56108672952E232B4AF05B1C912D4021A5C6B3A4 (void);
+// 0x00000056 System.Void XRIDefaultInputActions/XRIRightHandActions::Disable()
+extern void XRIRightHandActions_Disable_mD35D2A64B9D3F8CF94AE4CD0773AF75685650B3C (void);
+// 0x00000057 System.Boolean XRIDefaultInputActions/XRIRightHandActions::get_enabled()
+extern void XRIRightHandActions_get_enabled_mCE5495312F90A572539CFBC0631AA5CFCB69A722 (void);
+// 0x00000058 UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRIRightHandActions::op_Implicit(XRIDefaultInputActions/XRIRightHandActions)
+extern void XRIRightHandActions_op_Implicit_m5AC66F069C06B117D9C2722F7BE3552E84663B39 (void);
+// 0x00000059 System.Void XRIDefaultInputActions/XRIRightHandActions::SetCallbacks(XRIDefaultInputActions/IXRIRightHandActions)
+extern void XRIRightHandActions_SetCallbacks_m24DA4D0BA28D1FEB074842056665C028F7168638 (void);
+// 0x0000005A System.Void XRIDefaultInputActions/XRIRightHandInteractionActions::.ctor(XRIDefaultInputActions)
+extern void XRIRightHandInteractionActions__ctor_m3523AD5D833AB47D3AD88DA8FA87FAD5EC90635F (void);
+// 0x0000005B UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandInteractionActions::get_Select()
+extern void XRIRightHandInteractionActions_get_Select_m23AEA426442CEBC3572602F62482A72EDA88D0D6 (void);
+// 0x0000005C UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandInteractionActions::get_SelectValue()
+extern void XRIRightHandInteractionActions_get_SelectValue_m1540AA0ACCE3B0C7C2C0306DE89C923D38E46239 (void);
+// 0x0000005D UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandInteractionActions::get_Activate()
+extern void XRIRightHandInteractionActions_get_Activate_mF786131DF875E470BA0862EB8F42383830A38BAB (void);
+// 0x0000005E UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandInteractionActions::get_ActivateValue()
+extern void XRIRightHandInteractionActions_get_ActivateValue_m0187BA571AE746176B0BCA25596DFC304CC84AF0 (void);
+// 0x0000005F UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandInteractionActions::get_UIPress()
+extern void XRIRightHandInteractionActions_get_UIPress_mFD60EA83F0151AC05F9082088FDB9CD0D435691D (void);
+// 0x00000060 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandInteractionActions::get_UIPressValue()
+extern void XRIRightHandInteractionActions_get_UIPressValue_m42B4C569C08A8CABA6A8BD400EECA1EADD421855 (void);
+// 0x00000061 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandInteractionActions::get_RotateAnchor()
+extern void XRIRightHandInteractionActions_get_RotateAnchor_m89440915020202E3272E7A2CE1DDB9F26B2C0E98 (void);
+// 0x00000062 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandInteractionActions::get_TranslateAnchor()
+extern void XRIRightHandInteractionActions_get_TranslateAnchor_mEFFDA96D60F2169EF92B99B874DAB86E2D6A377C (void);
+// 0x00000063 UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRIRightHandInteractionActions::Get()
+extern void XRIRightHandInteractionActions_Get_m6F2581634FA93CF3BBEBA3F28213EADB36A416EF (void);
+// 0x00000064 System.Void XRIDefaultInputActions/XRIRightHandInteractionActions::Enable()
+extern void XRIRightHandInteractionActions_Enable_m72A958F9B501149AE87C8B80246CA5966D746D5A (void);
+// 0x00000065 System.Void XRIDefaultInputActions/XRIRightHandInteractionActions::Disable()
+extern void XRIRightHandInteractionActions_Disable_m009D549F04226A20C0155BA27E569BF5B634FA4C (void);
+// 0x00000066 System.Boolean XRIDefaultInputActions/XRIRightHandInteractionActions::get_enabled()
+extern void XRIRightHandInteractionActions_get_enabled_mD6090FF8F0C76B61A73C7F34E7E742E502828E06 (void);
+// 0x00000067 UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRIRightHandInteractionActions::op_Implicit(XRIDefaultInputActions/XRIRightHandInteractionActions)
+extern void XRIRightHandInteractionActions_op_Implicit_m063602689A33350A72404EC438431127F7FDA052 (void);
+// 0x00000068 System.Void XRIDefaultInputActions/XRIRightHandInteractionActions::SetCallbacks(XRIDefaultInputActions/IXRIRightHandInteractionActions)
+extern void XRIRightHandInteractionActions_SetCallbacks_m1002A0BAEA286792610E03A38752804087F29422 (void);
+// 0x00000069 System.Void XRIDefaultInputActions/XRIRightHandLocomotionActions::.ctor(XRIDefaultInputActions)
+extern void XRIRightHandLocomotionActions__ctor_m72BFA28CFB6E14021C46FACC70102087D0419C46 (void);
+// 0x0000006A UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandLocomotionActions::get_TeleportSelect()
+extern void XRIRightHandLocomotionActions_get_TeleportSelect_mD49989144846E28388172FA65EB59FBC3C0B4C90 (void);
+// 0x0000006B UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandLocomotionActions::get_TeleportModeActivate()
+extern void XRIRightHandLocomotionActions_get_TeleportModeActivate_mD8097F0FB2F9B216E3DA955CAF78B1296D2F1F33 (void);
+// 0x0000006C UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandLocomotionActions::get_TeleportModeCancel()
+extern void XRIRightHandLocomotionActions_get_TeleportModeCancel_m3DBD7E6A5313A6A7325679080A68160888B4739F (void);
+// 0x0000006D UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandLocomotionActions::get_TeleportDirection()
+extern void XRIRightHandLocomotionActions_get_TeleportDirection_m1F953CD8243D33602952E171930E6365C94FEEFD (void);
+// 0x0000006E UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandLocomotionActions::get_Turn()
+extern void XRIRightHandLocomotionActions_get_Turn_m1DA54CA293B1F7F07E3FD1B1EFDCF3AC4E7AF121 (void);
+// 0x0000006F UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandLocomotionActions::get_Move()
+extern void XRIRightHandLocomotionActions_get_Move_mA3644489FE581F32A9CE85B9417F22988CE80325 (void);
+// 0x00000070 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandLocomotionActions::get_GrabMove()
+extern void XRIRightHandLocomotionActions_get_GrabMove_mB008695CBD22C76A354943DB57A1D49DA656E5C6 (void);
+// 0x00000071 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIRightHandLocomotionActions::get_SnapTurn()
+extern void XRIRightHandLocomotionActions_get_SnapTurn_m354C63DB3CC1CAE1FA9FAE73FE015085E7186865 (void);
+// 0x00000072 UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRIRightHandLocomotionActions::Get()
+extern void XRIRightHandLocomotionActions_Get_mD74B454C5342F719026BDBBB870FC348CEEE6C53 (void);
+// 0x00000073 System.Void XRIDefaultInputActions/XRIRightHandLocomotionActions::Enable()
+extern void XRIRightHandLocomotionActions_Enable_mE2C63CFC7ED5C02A0F66BF86C4E7D189E2E8BC0D (void);
+// 0x00000074 System.Void XRIDefaultInputActions/XRIRightHandLocomotionActions::Disable()
+extern void XRIRightHandLocomotionActions_Disable_mC4CA9FEE997831A34BC6BB52827D24FDBCC610A6 (void);
+// 0x00000075 System.Boolean XRIDefaultInputActions/XRIRightHandLocomotionActions::get_enabled()
+extern void XRIRightHandLocomotionActions_get_enabled_m2F9860A57290BEBE2E42BA2DE50725BAAB2FB1C5 (void);
+// 0x00000076 UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRIRightHandLocomotionActions::op_Implicit(XRIDefaultInputActions/XRIRightHandLocomotionActions)
+extern void XRIRightHandLocomotionActions_op_Implicit_m2EF3CD076D1333B4882C4E62B399BAE1A9294DAD (void);
+// 0x00000077 System.Void XRIDefaultInputActions/XRIRightHandLocomotionActions::SetCallbacks(XRIDefaultInputActions/IXRIRightHandLocomotionActions)
+extern void XRIRightHandLocomotionActions_SetCallbacks_m0A2CFE83E3A1BB343E96D04C6DC6855AA91FA4F9 (void);
+// 0x00000078 System.Void XRIDefaultInputActions/XRIUIActions::.ctor(XRIDefaultInputActions)
+extern void XRIUIActions__ctor_m982E6E6980EBD49B925128ABC2AABD642084C7B7 (void);
+// 0x00000079 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIUIActions::get_Navigate()
+extern void XRIUIActions_get_Navigate_mBBD2B40570B492259D82D70F787CDCF2CFC5355D (void);
+// 0x0000007A UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIUIActions::get_Submit()
+extern void XRIUIActions_get_Submit_mB18CD9E3C243AC0077209DD2A11DA0962F730B77 (void);
+// 0x0000007B UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIUIActions::get_Cancel()
+extern void XRIUIActions_get_Cancel_mA7A1362B9427AAA24A9E6FAAC12BAA2ECFAEE6CD (void);
+// 0x0000007C UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIUIActions::get_Point()
+extern void XRIUIActions_get_Point_m94E008F9049085FF6E17BC377C00B48C6DF79B48 (void);
+// 0x0000007D UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIUIActions::get_Click()
+extern void XRIUIActions_get_Click_m5B483F1381A138A6D832208DD2069D62558CDE17 (void);
+// 0x0000007E UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIUIActions::get_ScrollWheel()
+extern void XRIUIActions_get_ScrollWheel_mB37306D4E41580B4886327F7EB3A628A28F286DA (void);
+// 0x0000007F UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIUIActions::get_MiddleClick()
+extern void XRIUIActions_get_MiddleClick_mDA15B17917750F6FA071C5E12EFE605FC7C06C6B (void);
+// 0x00000080 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/XRIUIActions::get_RightClick()
+extern void XRIUIActions_get_RightClick_m698FD9FE772CE18E42FC3DEAC748D924154D2648 (void);
+// 0x00000081 UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRIUIActions::Get()
+extern void XRIUIActions_Get_m01A5901E4D85476C6DE0D1C53FDCCF5A8AEEC8AC (void);
+// 0x00000082 System.Void XRIDefaultInputActions/XRIUIActions::Enable()
+extern void XRIUIActions_Enable_m8FAB83D0C87A4B6427809DC93AFC74542B476FC2 (void);
+// 0x00000083 System.Void XRIDefaultInputActions/XRIUIActions::Disable()
+extern void XRIUIActions_Disable_mCE4FE3094F4B30354BAE3A357A690D2DE608726B (void);
+// 0x00000084 System.Boolean XRIDefaultInputActions/XRIUIActions::get_enabled()
+extern void XRIUIActions_get_enabled_m050C61A7CBDCABF3D624AFE9A68C214B2D91BFD0 (void);
+// 0x00000085 UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/XRIUIActions::op_Implicit(XRIDefaultInputActions/XRIUIActions)
+extern void XRIUIActions_op_Implicit_m1E0FD99DF52328F5735D21EE8608D7BDE964BE3B (void);
+// 0x00000086 System.Void XRIDefaultInputActions/XRIUIActions::SetCallbacks(XRIDefaultInputActions/IXRIUIActions)
+extern void XRIUIActions_SetCallbacks_mD3EF97BF8C40A2880B21CEC9873AF66583ABA67C (void);
+// 0x00000087 System.Void XRIDefaultInputActions/KeyboardInteractionsActions::.ctor(XRIDefaultInputActions)
+extern void KeyboardInteractionsActions__ctor_m69C0A5D7E06738A6F537AF7E21BF20F2A8DE773F (void);
+// 0x00000088 UnityEngine.InputSystem.InputAction XRIDefaultInputActions/KeyboardInteractionsActions::get_Space()
+extern void KeyboardInteractionsActions_get_Space_mC5A83327F14001B16A728535E1A0A906A89936C6 (void);
+// 0x00000089 UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/KeyboardInteractionsActions::Get()
+extern void KeyboardInteractionsActions_Get_mABAFD48BF8391E6B8C6940D3E45AF1718B13B93E (void);
+// 0x0000008A System.Void XRIDefaultInputActions/KeyboardInteractionsActions::Enable()
+extern void KeyboardInteractionsActions_Enable_mEB60A1C8B561DBB5F4FE29FF49D649DCBD2559B3 (void);
+// 0x0000008B System.Void XRIDefaultInputActions/KeyboardInteractionsActions::Disable()
+extern void KeyboardInteractionsActions_Disable_mCC98D256442776728BC5410ECC0EC6D86421BCA4 (void);
+// 0x0000008C System.Boolean XRIDefaultInputActions/KeyboardInteractionsActions::get_enabled()
+extern void KeyboardInteractionsActions_get_enabled_m06CBB06CFF02AB40ECB0594761AC12BAD14E1591 (void);
+// 0x0000008D UnityEngine.InputSystem.InputActionMap XRIDefaultInputActions/KeyboardInteractionsActions::op_Implicit(XRIDefaultInputActions/KeyboardInteractionsActions)
+extern void KeyboardInteractionsActions_op_Implicit_m854861616E7B5573BAF8121923D8E201A80F3FE7 (void);
+// 0x0000008E System.Void XRIDefaultInputActions/KeyboardInteractionsActions::SetCallbacks(XRIDefaultInputActions/IKeyboardInteractionsActions)
+extern void KeyboardInteractionsActions_SetCallbacks_m0DB8B0718FC34A549ACF724FCD2B03256438C45B (void);
+// 0x0000008F System.Void XRIDefaultInputActions/IXRIHeadActions::OnPosition(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000090 System.Void XRIDefaultInputActions/IXRIHeadActions::OnRotation(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000091 System.Void XRIDefaultInputActions/IXRILeftHandActions::OnPosition(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000092 System.Void XRIDefaultInputActions/IXRILeftHandActions::OnRotation(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000093 System.Void XRIDefaultInputActions/IXRILeftHandActions::OnTrackingState(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000094 System.Void XRIDefaultInputActions/IXRILeftHandActions::OnHapticDevice(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000095 System.Void XRIDefaultInputActions/IXRILeftHandInteractionActions::OnSelect(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000096 System.Void XRIDefaultInputActions/IXRILeftHandInteractionActions::OnSelectValue(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000097 System.Void XRIDefaultInputActions/IXRILeftHandInteractionActions::OnActivate(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000098 System.Void XRIDefaultInputActions/IXRILeftHandInteractionActions::OnActivateValue(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x00000099 System.Void XRIDefaultInputActions/IXRILeftHandInteractionActions::OnUIPress(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x0000009A System.Void XRIDefaultInputActions/IXRILeftHandInteractionActions::OnUIPressValue(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x0000009B System.Void XRIDefaultInputActions/IXRILeftHandInteractionActions::OnRotateAnchor(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x0000009C System.Void XRIDefaultInputActions/IXRILeftHandInteractionActions::OnTranslateAnchor(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x0000009D System.Void XRIDefaultInputActions/IXRILeftHandLocomotionActions::OnTeleportSelect(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x0000009E System.Void XRIDefaultInputActions/IXRILeftHandLocomotionActions::OnTeleportModeActivate(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x0000009F System.Void XRIDefaultInputActions/IXRILeftHandLocomotionActions::OnTeleportModeCancel(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000A0 System.Void XRIDefaultInputActions/IXRILeftHandLocomotionActions::OnTeleportDirection(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000A1 System.Void XRIDefaultInputActions/IXRILeftHandLocomotionActions::OnTurn(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000A2 System.Void XRIDefaultInputActions/IXRILeftHandLocomotionActions::OnMove(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000A3 System.Void XRIDefaultInputActions/IXRILeftHandLocomotionActions::OnGrabMove(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000A4 System.Void XRIDefaultInputActions/IXRILeftHandLocomotionActions::OnSnapTurn(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000A5 System.Void XRIDefaultInputActions/IXRIRightHandActions::OnPosition(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000A6 System.Void XRIDefaultInputActions/IXRIRightHandActions::OnRotation(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000A7 System.Void XRIDefaultInputActions/IXRIRightHandActions::OnTrackingState(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000A8 System.Void XRIDefaultInputActions/IXRIRightHandActions::OnHapticDevice(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000A9 System.Void XRIDefaultInputActions/IXRIRightHandInteractionActions::OnSelect(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000AA System.Void XRIDefaultInputActions/IXRIRightHandInteractionActions::OnSelectValue(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000AB System.Void XRIDefaultInputActions/IXRIRightHandInteractionActions::OnActivate(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000AC System.Void XRIDefaultInputActions/IXRIRightHandInteractionActions::OnActivateValue(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000AD System.Void XRIDefaultInputActions/IXRIRightHandInteractionActions::OnUIPress(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000AE System.Void XRIDefaultInputActions/IXRIRightHandInteractionActions::OnUIPressValue(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000AF System.Void XRIDefaultInputActions/IXRIRightHandInteractionActions::OnRotateAnchor(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000B0 System.Void XRIDefaultInputActions/IXRIRightHandInteractionActions::OnTranslateAnchor(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000B1 System.Void XRIDefaultInputActions/IXRIRightHandLocomotionActions::OnTeleportSelect(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000B2 System.Void XRIDefaultInputActions/IXRIRightHandLocomotionActions::OnTeleportModeActivate(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000B3 System.Void XRIDefaultInputActions/IXRIRightHandLocomotionActions::OnTeleportModeCancel(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000B4 System.Void XRIDefaultInputActions/IXRIRightHandLocomotionActions::OnTeleportDirection(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000B5 System.Void XRIDefaultInputActions/IXRIRightHandLocomotionActions::OnTurn(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000B6 System.Void XRIDefaultInputActions/IXRIRightHandLocomotionActions::OnMove(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000B7 System.Void XRIDefaultInputActions/IXRIRightHandLocomotionActions::OnGrabMove(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000B8 System.Void XRIDefaultInputActions/IXRIRightHandLocomotionActions::OnSnapTurn(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000B9 System.Void XRIDefaultInputActions/IXRIUIActions::OnNavigate(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000BA System.Void XRIDefaultInputActions/IXRIUIActions::OnSubmit(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000BB System.Void XRIDefaultInputActions/IXRIUIActions::OnCancel(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000BC System.Void XRIDefaultInputActions/IXRIUIActions::OnPoint(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000BD System.Void XRIDefaultInputActions/IXRIUIActions::OnClick(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000BE System.Void XRIDefaultInputActions/IXRIUIActions::OnScrollWheel(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000BF System.Void XRIDefaultInputActions/IXRIUIActions::OnMiddleClick(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000C0 System.Void XRIDefaultInputActions/IXRIUIActions::OnRightClick(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000C1 System.Void XRIDefaultInputActions/IKeyboardInteractionsActions::OnSpace(UnityEngine.InputSystem.InputAction/CallbackContext)
+// 0x000000C2 System.Boolean UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::get_smoothMotionEnabled()
+extern void ActionBasedControllerManager_get_smoothMotionEnabled_m8B330E329AE71CE007B9DE78AFA9A87D4E2C4F61 (void);
+// 0x000000C3 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::set_smoothMotionEnabled(System.Boolean)
+extern void ActionBasedControllerManager_set_smoothMotionEnabled_mAD21DF2AADD6B279F352C7D7CEBBCC372B78BF96 (void);
+// 0x000000C4 System.Boolean UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::get_smoothTurnEnabled()
+extern void ActionBasedControllerManager_get_smoothTurnEnabled_m9AEFB376258A823C5C42D9128BF7F5F6331419A3 (void);
+// 0x000000C5 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::set_smoothTurnEnabled(System.Boolean)
+extern void ActionBasedControllerManager_set_smoothTurnEnabled_m7503E78C50CEEE5F3F51D885F6363A264DA7B24F (void);
+// 0x000000C6 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::SetupInteractorEvents()
+extern void ActionBasedControllerManager_SetupInteractorEvents_mE9FCCBD1C9BEEBBE22AD9B10F017A9EE1EBDA852 (void);
+// 0x000000C7 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::TeardownInteractorEvents()
+extern void ActionBasedControllerManager_TeardownInteractorEvents_mD09E6747F7DEBAC01AC1D58D78FA53503A2B68C8 (void);
+// 0x000000C8 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::StartTeleport(UnityEngine.InputSystem.InputAction/CallbackContext)
+extern void ActionBasedControllerManager_StartTeleport_m3BB3397C03EEC8DB2720D30007433C5B73B3E31C (void);
+// 0x000000C9 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::CancelTeleport(UnityEngine.InputSystem.InputAction/CallbackContext)
+extern void ActionBasedControllerManager_CancelTeleport_mDEADB1823E22D5D3DD7A62B8B442B27C4311F7EE (void);
+// 0x000000CA System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::DirectHoverEntered(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+extern void ActionBasedControllerManager_DirectHoverEntered_m3E0E6555D82A67F5B39D7BAD9147CC28F57E822B (void);
+// 0x000000CB System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::DirectHoverExited(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+extern void ActionBasedControllerManager_DirectHoverExited_mB9E468E10037B907929C11B72D491E65C8C5CD27 (void);
+// 0x000000CC System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::DirectSelectEntered(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+extern void ActionBasedControllerManager_DirectSelectEntered_m52D1EF76F749B8ED1F432214D5D56BCB96890C04 (void);
+// 0x000000CD System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::DirectSelectExited(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+extern void ActionBasedControllerManager_DirectSelectExited_m5200A0A86DF4780E5236ED5F55FD5B2D5C782E3F (void);
+// 0x000000CE System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::DirectInteractorUpdate()
+extern void ActionBasedControllerManager_DirectInteractorUpdate_mB7C2A594103E20C1FBF5225DF9FFA5A65FC7EEAB (void);
+// 0x000000CF System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::RayInteractorUpdate()
+extern void ActionBasedControllerManager_RayInteractorUpdate_m51B5DB10D9DE735AAD0AD17B249EB99237781456 (void);
+// 0x000000D0 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::RaySelectEntered(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+extern void ActionBasedControllerManager_RaySelectEntered_mF9AB3BB3816FC10F4A2EE1250F64877894C88560 (void);
+// 0x000000D1 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::RaySelectExited(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+extern void ActionBasedControllerManager_RaySelectExited_m5754105EC3EB186B271FE714C43D4FD85989BE3E (void);
+// 0x000000D2 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::Awake()
+extern void ActionBasedControllerManager_Awake_m218F72512646A09591011C77FC350C86E8761271 (void);
+// 0x000000D3 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::Start()
+extern void ActionBasedControllerManager_Start_m18D931BF912208154FC2425A4C2565B74BCE5897 (void);
+// 0x000000D4 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::OnEnable()
+extern void ActionBasedControllerManager_OnEnable_m51D610223E8BB80FA2AA9945D7BE39E54DB2431B (void);
+// 0x000000D5 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::OnDisable()
+extern void ActionBasedControllerManager_OnDisable_m8B966E4F807DA7CF20155AD1239C1CE86658C535 (void);
+// 0x000000D6 System.Collections.IEnumerator UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::OnAfterInteractionEvents()
+extern void ActionBasedControllerManager_OnAfterInteractionEvents_mCF40B0815F54413521A227CA9945ACAE6EBB83FD (void);
+// 0x000000D7 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::UpdateLocomotionActions()
+extern void ActionBasedControllerManager_UpdateLocomotionActions_m90E85E149A202B3BEE453D8CCE7B9DC95F9442CA (void);
+// 0x000000D8 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::UpdateTurnActions()
+extern void ActionBasedControllerManager_UpdateTurnActions_m312043FF58D3979F121D7D62E1CE44B2D51F5CA7 (void);
+// 0x000000D9 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::DisableLocomotionAndTurnActions()
+extern void ActionBasedControllerManager_DisableLocomotionAndTurnActions_mABD0F9C39BD055AD8936817F53AFA77B2D8ED179 (void);
+// 0x000000DA System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::EnableAction(UnityEngine.InputSystem.InputActionReference)
+extern void ActionBasedControllerManager_EnableAction_m4F594C5139322B9A68E0A809201BFB76538E9AD8 (void);
+// 0x000000DB System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::DisableAction(UnityEngine.InputSystem.InputActionReference)
+extern void ActionBasedControllerManager_DisableAction_m7DB0495AE24BDF1E2F626F4EAFEBF580B911FA9F (void);
+// 0x000000DC UnityEngine.InputSystem.InputAction UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::GetInputAction(UnityEngine.InputSystem.InputActionReference)
+extern void ActionBasedControllerManager_GetInputAction_mB065776536731D218E38E2CD6E46BA7837AEBC44 (void);
+// 0x000000DD System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager::.ctor()
+extern void ActionBasedControllerManager__ctor_m3CC27D6ED7208EDE2640264C9C20DBDCF01B130C (void);
+// 0x000000DE System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager/<OnAfterInteractionEvents>d__39::.ctor(System.Int32)
+extern void U3COnAfterInteractionEventsU3Ed__39__ctor_mB09C1EDD58C6D53B892C4F229A78A267C8341943 (void);
+// 0x000000DF System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager/<OnAfterInteractionEvents>d__39::System.IDisposable.Dispose()
+extern void U3COnAfterInteractionEventsU3Ed__39_System_IDisposable_Dispose_m65F25F52041F61E8C8E51874CEDD2842B3F4C721 (void);
+// 0x000000E0 System.Boolean UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager/<OnAfterInteractionEvents>d__39::MoveNext()
+extern void U3COnAfterInteractionEventsU3Ed__39_MoveNext_m72D41D5EB53D6CFD3479F7209EE595B1E764ACF7 (void);
+// 0x000000E1 System.Object UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager/<OnAfterInteractionEvents>d__39::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3COnAfterInteractionEventsU3Ed__39_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m805DA680A79BA6ECC9D9503FEB7A1C3B9C8DD001 (void);
+// 0x000000E2 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager/<OnAfterInteractionEvents>d__39::System.Collections.IEnumerator.Reset()
+extern void U3COnAfterInteractionEventsU3Ed__39_System_Collections_IEnumerator_Reset_m441FA5993DB32A0CE8245D1C21F412BD6BCD16A7 (void);
+// 0x000000E3 System.Object UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.ActionBasedControllerManager/<OnAfterInteractionEvents>d__39::System.Collections.IEnumerator.get_Current()
+extern void U3COnAfterInteractionEventsU3Ed__39_System_Collections_IEnumerator_get_Current_m848D07E727D79CF9AA8938986441EF780B4DA9E3 (void);
+// 0x000000E4 UnityEngine.Transform UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::get_headTransform()
+extern void DynamicMoveProvider_get_headTransform_m303EF17C689C6B515494F07F2259A0BA6B8D0605 (void);
+// 0x000000E5 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::set_headTransform(UnityEngine.Transform)
+extern void DynamicMoveProvider_set_headTransform_mCB442704F390FE95E70DE479145A5F2E2E138885 (void);
+// 0x000000E6 UnityEngine.Transform UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::get_leftControllerTransform()
+extern void DynamicMoveProvider_get_leftControllerTransform_mAA1DA9B68DEEA326FC1560FDADDF454DEC69C8A8 (void);
+// 0x000000E7 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::set_leftControllerTransform(UnityEngine.Transform)
+extern void DynamicMoveProvider_set_leftControllerTransform_mF1E47F46BFE01F5355FC71BD67DD1A9CFD2C3DB1 (void);
+// 0x000000E8 UnityEngine.Transform UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::get_rightControllerTransform()
+extern void DynamicMoveProvider_get_rightControllerTransform_m6FAEE855A31155E21184B32D086F15CE9DA7C92E (void);
+// 0x000000E9 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::set_rightControllerTransform(UnityEngine.Transform)
+extern void DynamicMoveProvider_set_rightControllerTransform_mD138BE95DF4A34447A88F1817806C4BAE2239CFA (void);
+// 0x000000EA UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider/MovementDirection UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::get_leftHandMovementDirection()
+extern void DynamicMoveProvider_get_leftHandMovementDirection_m5D0D0D4A984DC0B0CAED6DE32722BE640296ABBF (void);
+// 0x000000EB System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::set_leftHandMovementDirection(UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider/MovementDirection)
+extern void DynamicMoveProvider_set_leftHandMovementDirection_mB73B1139104B7F11E0360C8E900789C0E05881F2 (void);
+// 0x000000EC UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider/MovementDirection UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::get_rightHandMovementDirection()
+extern void DynamicMoveProvider_get_rightHandMovementDirection_m88088CD035CDA2ED6597F19DC5C93D8730089C7C (void);
+// 0x000000ED System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::set_rightHandMovementDirection(UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider/MovementDirection)
+extern void DynamicMoveProvider_set_rightHandMovementDirection_m985C438DA67D7479D5D0AA020A8EB411856E51E5 (void);
+// 0x000000EE System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::Awake()
+extern void DynamicMoveProvider_Awake_m3BAB88EE73C713431D822EB7323817318C4C0711 (void);
+// 0x000000EF UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::ComputeDesiredMove(UnityEngine.Vector2)
+extern void DynamicMoveProvider_ComputeDesiredMove_mADD1C5EB231A3EDA633059109A91BC4361274733 (void);
+// 0x000000F0 System.Void UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.DynamicMoveProvider::.ctor()
+extern void DynamicMoveProvider__ctor_mABE04D06EBE852E39DDBBB9A305090A5A7B04650 (void);
+static Il2CppMethodPointer s_methodPointers[240] = 
+{
+	XRIDefaultInputActions_get_asset_m86306CA6AA158117CEDF794C2C2943AAC4CB8FCF,
+	XRIDefaultInputActions__ctor_mEED675845BA2C6684E99E27C4E938F045D8DC897,
+	XRIDefaultInputActions_Dispose_m5681B9950133F869016830D5F1B112FE7CA9413E,
+	XRIDefaultInputActions_get_bindingMask_m4738FB286A9DFDF22451FE2FE41BB4FA9F454537,
+	XRIDefaultInputActions_set_bindingMask_m6D949AB3A0AA6385E3269487B18473258F031709,
+	XRIDefaultInputActions_get_devices_mA10E0774285837715BE56931C236FF7233CC0A01,
+	XRIDefaultInputActions_set_devices_m9C0F245507890C7DB2F66AB96E169725EF1D35BF,
+	XRIDefaultInputActions_get_controlSchemes_m9E26F3EBE720E7338B773D2E756EF3DB43B4A369,
+	XRIDefaultInputActions_Contains_mBCFE283224FA909FE3B2F6B03ED6618065C7699D,
+	XRIDefaultInputActions_GetEnumerator_mA46BF47C6A3E8D51E7575C1A8CA2F5DC460BDF40,
+	XRIDefaultInputActions_System_Collections_IEnumerable_GetEnumerator_m17F9EAA19EC6245C58F4422444885E72ED6CC808,
+	XRIDefaultInputActions_Enable_m739391FD6E1EB64ED394AD3992122CA8BAB1C72A,
+	XRIDefaultInputActions_Disable_m8A2C6C108F3DC0B22180070040AB70F1F1C3E175,
+	XRIDefaultInputActions_get_bindings_mF624E1763C91B6900B92E4944D47B566ACED801B,
+	XRIDefaultInputActions_FindAction_m7E64A51A4114253083E944D390E7E40F63EC8AE0,
+	XRIDefaultInputActions_FindBinding_mEFB87CC4EC9797EA18E88138D94685A3587C34AE,
+	XRIDefaultInputActions_get_XRIHead_mB42FB11FC0784EFB4AE390733343E2C9824D3A92,
+	XRIDefaultInputActions_get_XRILeftHand_m9633F41E04108FEEBC2C840BF9B777146B716F7E,
+	XRIDefaultInputActions_get_XRILeftHandInteraction_mC7BBB5F7E68E472A5B0047E1CDE16043C2C0AEEA,
+	XRIDefaultInputActions_get_XRILeftHandLocomotion_mC270627DA333003B83DF09951F3B0736F19D21AD,
+	XRIDefaultInputActions_get_XRIRightHand_m3561B1234F65F649F5F438F0D47644506ED13C35,
+	XRIDefaultInputActions_get_XRIRightHandInteraction_m6C3B79449D4F904B80EFF1B902F5C20D668CA2FB,
+	XRIDefaultInputActions_get_XRIRightHandLocomotion_m7DB9E9DFD9EF2E08CCBBE87C67D47A1A0CAF974A,
+	XRIDefaultInputActions_get_XRIUI_m4E13B319A5897D5793728835D547CC24584B4D49,
+	XRIDefaultInputActions_get_KeyboardInteractions_mA2AE42B8CFD8CCF64215DF0855787FD01E96A14C,
+	XRIDefaultInputActions_get_GenericXRControllerScheme_m373111F79264E808AF5336BAAFC9CA5C5B5DE280,
+	XRIDefaultInputActions_get_ContinuousMoveScheme_m26F5A6AE551D14789BFFBCB3C8B3ACF16C83CF11,
+	XRIDefaultInputActions_get_NoncontinuousMoveScheme_m0A17259456A6676DF431D95E5E861888DD44F99B,
+	XRIHeadActions__ctor_m2C79297594A86840467246813612EA95B5C0D505,
+	XRIHeadActions_get_Position_mCB0684C609739C96B6044E3B654085BD1036BD72,
+	XRIHeadActions_get_Rotation_m0D711C837A21AA163F6582BF5D6991623FF1055C,
+	XRIHeadActions_Get_m6E3648FA2C90F0520AA1F257EA37BF1B362DCA0C,
+	XRIHeadActions_Enable_m65E3157B9B9DEC5E1DAE58F276392F91A2D0E9B4,
+	XRIHeadActions_Disable_m64A1349E803B52CD2A93B970E03452528D212F62,
+	XRIHeadActions_get_enabled_m7420ED3378E957BDB481A559A8159CC1ED0DD528,
+	XRIHeadActions_op_Implicit_mF459429B3B8F74D4E024BD2F7EE7142023156FC2,
+	XRIHeadActions_SetCallbacks_m31E977056A4FA03F9E05238451670687DE914E42,
+	XRILeftHandActions__ctor_mD9DB93543EB37C78BB469A9D2319BE8F3DAE66E2,
+	XRILeftHandActions_get_Position_mB96304BCF424F25103050DC453A2B0E0B74E1843,
+	XRILeftHandActions_get_Rotation_mEACB83BE2FD56BE7083F9EC02C5D548F53319F73,
+	XRILeftHandActions_get_TrackingState_mB3DD3ABBA80FF66A302D890E1214E07FCCF3BD84,
+	XRILeftHandActions_get_HapticDevice_m0A5534F93E71161DCF1AD4C33A185514626D1545,
+	XRILeftHandActions_Get_mE114999F7F2B3650D8902E53441D269371BCF28E,
+	XRILeftHandActions_Enable_mEA77F2BA77FA85855DC2959E3113963B035E5803,
+	XRILeftHandActions_Disable_m0D3EB5DF14852A6320E6C1D9ADAC1FED86F1B873,
+	XRILeftHandActions_get_enabled_mD0FC7456F89B6546CB676DA02210E60CF4FF2AC9,
+	XRILeftHandActions_op_Implicit_mE638E127E2BBBCA08A9C45AF9969E1C25EBE5C40,
+	XRILeftHandActions_SetCallbacks_m366CBA84473534F1DE5CC7A22E9425B23FD0AF78,
+	XRILeftHandInteractionActions__ctor_m2421B1D6EDF8F5899024A762663F8FEF4948B246,
+	XRILeftHandInteractionActions_get_Select_m6077D94A06122354849DFBD0EBE57AB3197C7CF7,
+	XRILeftHandInteractionActions_get_SelectValue_m59E2DFDABA6053F32A1BFD4B6EC1669BC26732C2,
+	XRILeftHandInteractionActions_get_Activate_m73180F7F14DDB792CF14E64AB75F9A74EF351A46,
+	XRILeftHandInteractionActions_get_ActivateValue_mBEB2BAD498A415AA2623D92E7F6D7ACA21BD3B11,
+	XRILeftHandInteractionActions_get_UIPress_m38AF3C049F839A671F974D6F9239B6DE08CBA791,
+	XRILeftHandInteractionActions_get_UIPressValue_mA617CE5CC0131ACBD771EE35DF10AC8D7F8B3756,
+	XRILeftHandInteractionActions_get_RotateAnchor_m8C2E6A22FA214AB9A0B534B3421512A3B5D7C8FA,
+	XRILeftHandInteractionActions_get_TranslateAnchor_m142A788D46F74CD4F1648F53BDD855057D09DA4B,
+	XRILeftHandInteractionActions_Get_m311202F47415DEFC147B70A69492CE6ACA3A4E00,
+	XRILeftHandInteractionActions_Enable_mAF78A8C3781522E6989C5933ABCDD2FEA3BD3E04,
+	XRILeftHandInteractionActions_Disable_m83F4280B7DC1A54AC1D29B8CF0B1163FC5649DA1,
+	XRILeftHandInteractionActions_get_enabled_mCC2EE36CB93AA21FFE34D34FDD2C9D67B604FEF3,
+	XRILeftHandInteractionActions_op_Implicit_mDF52EAD9F22622A5CC546AB1B392768EC16549E6,
+	XRILeftHandInteractionActions_SetCallbacks_mC9E68B1FEFDA69409FC220733E72477AC8BCFA83,
+	XRILeftHandLocomotionActions__ctor_m8622F2E7CBBFBCDD789CB85A1A1E061CF10EEE27,
+	XRILeftHandLocomotionActions_get_TeleportSelect_mB3EDF296F8832588A2FA552AB9251AE1EBD8A1B0,
+	XRILeftHandLocomotionActions_get_TeleportModeActivate_mE2D4999193C313BC472D8466331962AE58E0BAA6,
+	XRILeftHandLocomotionActions_get_TeleportModeCancel_m576664594676144DA94FBC7E628E7DFFB9C3245F,
+	XRILeftHandLocomotionActions_get_TeleportDirection_mB491C7B88FEBD6ED10528151E5A03794652A0779,
+	XRILeftHandLocomotionActions_get_Turn_m187619A2F68F17E92FD6A3A2CED45DA6CCAAC3EF,
+	XRILeftHandLocomotionActions_get_Move_m534FB200DE77539FEF23425AF8CF84F966AE0542,
+	XRILeftHandLocomotionActions_get_GrabMove_mA42CCE816AD85F15FBD2FEF906326DC71FBE1C83,
+	XRILeftHandLocomotionActions_get_SnapTurn_mC3736DDF91A4760EC74238472E4EDD8B3F767412,
+	XRILeftHandLocomotionActions_Get_m41D7B1CCD75F93F12FC04230DD496D3021525A9B,
+	XRILeftHandLocomotionActions_Enable_m551BAC3DA3732F50780F0EE0B2A9A968DF9C509C,
+	XRILeftHandLocomotionActions_Disable_m3C23EE745324A16059C17473624BFFA9DA151BF4,
+	XRILeftHandLocomotionActions_get_enabled_m48AD07CF7B6366B71F38BF67D1E6E07C2980382F,
+	XRILeftHandLocomotionActions_op_Implicit_mF269B0670CF64382B2BF88EB90D7D57FB293B9F6,
+	XRILeftHandLocomotionActions_SetCallbacks_mF6B12AB110DE149BF723FC4974221C5B53F1041B,
+	XRIRightHandActions__ctor_mF2CB7EEAF7562D0F7022C152DBD11A58A80690CC,
+	XRIRightHandActions_get_Position_m9F732B618668D433D18274114B086A3D766681F6,
+	XRIRightHandActions_get_Rotation_m8AA4D1F2806DDD9D3842A8EF24159E4A68953083,
+	XRIRightHandActions_get_TrackingState_m1CFB70836A483F41E5F2474355CC9D7FC495D597,
+	XRIRightHandActions_get_HapticDevice_mFAF7E89221FE248B1A7F3A4DA411FA3A30EAB54A,
+	XRIRightHandActions_Get_m853DF89088D4B0B0FC901AB517BF1CE07D9B763E,
+	XRIRightHandActions_Enable_m56108672952E232B4AF05B1C912D4021A5C6B3A4,
+	XRIRightHandActions_Disable_mD35D2A64B9D3F8CF94AE4CD0773AF75685650B3C,
+	XRIRightHandActions_get_enabled_mCE5495312F90A572539CFBC0631AA5CFCB69A722,
+	XRIRightHandActions_op_Implicit_m5AC66F069C06B117D9C2722F7BE3552E84663B39,
+	XRIRightHandActions_SetCallbacks_m24DA4D0BA28D1FEB074842056665C028F7168638,
+	XRIRightHandInteractionActions__ctor_m3523AD5D833AB47D3AD88DA8FA87FAD5EC90635F,
+	XRIRightHandInteractionActions_get_Select_m23AEA426442CEBC3572602F62482A72EDA88D0D6,
+	XRIRightHandInteractionActions_get_SelectValue_m1540AA0ACCE3B0C7C2C0306DE89C923D38E46239,
+	XRIRightHandInteractionActions_get_Activate_mF786131DF875E470BA0862EB8F42383830A38BAB,
+	XRIRightHandInteractionActions_get_ActivateValue_m0187BA571AE746176B0BCA25596DFC304CC84AF0,
+	XRIRightHandInteractionActions_get_UIPress_mFD60EA83F0151AC05F9082088FDB9CD0D435691D,
+	XRIRightHandInteractionActions_get_UIPressValue_m42B4C569C08A8CABA6A8BD400EECA1EADD421855,
+	XRIRightHandInteractionActions_get_RotateAnchor_m89440915020202E3272E7A2CE1DDB9F26B2C0E98,
+	XRIRightHandInteractionActions_get_TranslateAnchor_mEFFDA96D60F2169EF92B99B874DAB86E2D6A377C,
+	XRIRightHandInteractionActions_Get_m6F2581634FA93CF3BBEBA3F28213EADB36A416EF,
+	XRIRightHandInteractionActions_Enable_m72A958F9B501149AE87C8B80246CA5966D746D5A,
+	XRIRightHandInteractionActions_Disable_m009D549F04226A20C0155BA27E569BF5B634FA4C,
+	XRIRightHandInteractionActions_get_enabled_mD6090FF8F0C76B61A73C7F34E7E742E502828E06,
+	XRIRightHandInteractionActions_op_Implicit_m063602689A33350A72404EC438431127F7FDA052,
+	XRIRightHandInteractionActions_SetCallbacks_m1002A0BAEA286792610E03A38752804087F29422,
+	XRIRightHandLocomotionActions__ctor_m72BFA28CFB6E14021C46FACC70102087D0419C46,
+	XRIRightHandLocomotionActions_get_TeleportSelect_mD49989144846E28388172FA65EB59FBC3C0B4C90,
+	XRIRightHandLocomotionActions_get_TeleportModeActivate_mD8097F0FB2F9B216E3DA955CAF78B1296D2F1F33,
+	XRIRightHandLocomotionActions_get_TeleportModeCancel_m3DBD7E6A5313A6A7325679080A68160888B4739F,
+	XRIRightHandLocomotionActions_get_TeleportDirection_m1F953CD8243D33602952E171930E6365C94FEEFD,
+	XRIRightHandLocomotionActions_get_Turn_m1DA54CA293B1F7F07E3FD1B1EFDCF3AC4E7AF121,
+	XRIRightHandLocomotionActions_get_Move_mA3644489FE581F32A9CE85B9417F22988CE80325,
+	XRIRightHandLocomotionActions_get_GrabMove_mB008695CBD22C76A354943DB57A1D49DA656E5C6,
+	XRIRightHandLocomotionActions_get_SnapTurn_m354C63DB3CC1CAE1FA9FAE73FE015085E7186865,
+	XRIRightHandLocomotionActions_Get_mD74B454C5342F719026BDBBB870FC348CEEE6C53,
+	XRIRightHandLocomotionActions_Enable_mE2C63CFC7ED5C02A0F66BF86C4E7D189E2E8BC0D,
+	XRIRightHandLocomotionActions_Disable_mC4CA9FEE997831A34BC6BB52827D24FDBCC610A6,
+	XRIRightHandLocomotionActions_get_enabled_m2F9860A57290BEBE2E42BA2DE50725BAAB2FB1C5,
+	XRIRightHandLocomotionActions_op_Implicit_m2EF3CD076D1333B4882C4E62B399BAE1A9294DAD,
+	XRIRightHandLocomotionActions_SetCallbacks_m0A2CFE83E3A1BB343E96D04C6DC6855AA91FA4F9,
+	XRIUIActions__ctor_m982E6E6980EBD49B925128ABC2AABD642084C7B7,
+	XRIUIActions_get_Navigate_mBBD2B40570B492259D82D70F787CDCF2CFC5355D,
+	XRIUIActions_get_Submit_mB18CD9E3C243AC0077209DD2A11DA0962F730B77,
+	XRIUIActions_get_Cancel_mA7A1362B9427AAA24A9E6FAAC12BAA2ECFAEE6CD,
+	XRIUIActions_get_Point_m94E008F9049085FF6E17BC377C00B48C6DF79B48,
+	XRIUIActions_get_Click_m5B483F1381A138A6D832208DD2069D62558CDE17,
+	XRIUIActions_get_ScrollWheel_mB37306D4E41580B4886327F7EB3A628A28F286DA,
+	XRIUIActions_get_MiddleClick_mDA15B17917750F6FA071C5E12EFE605FC7C06C6B,
+	XRIUIActions_get_RightClick_m698FD9FE772CE18E42FC3DEAC748D924154D2648,
+	XRIUIActions_Get_m01A5901E4D85476C6DE0D1C53FDCCF5A8AEEC8AC,
+	XRIUIActions_Enable_m8FAB83D0C87A4B6427809DC93AFC74542B476FC2,
+	XRIUIActions_Disable_mCE4FE3094F4B30354BAE3A357A690D2DE608726B,
+	XRIUIActions_get_enabled_m050C61A7CBDCABF3D624AFE9A68C214B2D91BFD0,
+	XRIUIActions_op_Implicit_m1E0FD99DF52328F5735D21EE8608D7BDE964BE3B,
+	XRIUIActions_SetCallbacks_mD3EF97BF8C40A2880B21CEC9873AF66583ABA67C,
+	KeyboardInteractionsActions__ctor_m69C0A5D7E06738A6F537AF7E21BF20F2A8DE773F,
+	KeyboardInteractionsActions_get_Space_mC5A83327F14001B16A728535E1A0A906A89936C6,
+	KeyboardInteractionsActions_Get_mABAFD48BF8391E6B8C6940D3E45AF1718B13B93E,
+	KeyboardInteractionsActions_Enable_mEB60A1C8B561DBB5F4FE29FF49D649DCBD2559B3,
+	KeyboardInteractionsActions_Disable_mCC98D256442776728BC5410ECC0EC6D86421BCA4,
+	KeyboardInteractionsActions_get_enabled_m06CBB06CFF02AB40ECB0594761AC12BAD14E1591,
+	KeyboardInteractionsActions_op_Implicit_m854861616E7B5573BAF8121923D8E201A80F3FE7,
+	KeyboardInteractionsActions_SetCallbacks_m0DB8B0718FC34A549ACF724FCD2B03256438C45B,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	ActionBasedControllerManager_get_smoothMotionEnabled_m8B330E329AE71CE007B9DE78AFA9A87D4E2C4F61,
+	ActionBasedControllerManager_set_smoothMotionEnabled_mAD21DF2AADD6B279F352C7D7CEBBCC372B78BF96,
+	ActionBasedControllerManager_get_smoothTurnEnabled_m9AEFB376258A823C5C42D9128BF7F5F6331419A3,
+	ActionBasedControllerManager_set_smoothTurnEnabled_m7503E78C50CEEE5F3F51D885F6363A264DA7B24F,
+	ActionBasedControllerManager_SetupInteractorEvents_mE9FCCBD1C9BEEBBE22AD9B10F017A9EE1EBDA852,
+	ActionBasedControllerManager_TeardownInteractorEvents_mD09E6747F7DEBAC01AC1D58D78FA53503A2B68C8,
+	ActionBasedControllerManager_StartTeleport_m3BB3397C03EEC8DB2720D30007433C5B73B3E31C,
+	ActionBasedControllerManager_CancelTeleport_mDEADB1823E22D5D3DD7A62B8B442B27C4311F7EE,
+	ActionBasedControllerManager_DirectHoverEntered_m3E0E6555D82A67F5B39D7BAD9147CC28F57E822B,
+	ActionBasedControllerManager_DirectHoverExited_mB9E468E10037B907929C11B72D491E65C8C5CD27,
+	ActionBasedControllerManager_DirectSelectEntered_m52D1EF76F749B8ED1F432214D5D56BCB96890C04,
+	ActionBasedControllerManager_DirectSelectExited_m5200A0A86DF4780E5236ED5F55FD5B2D5C782E3F,
+	ActionBasedControllerManager_DirectInteractorUpdate_mB7C2A594103E20C1FBF5225DF9FFA5A65FC7EEAB,
+	ActionBasedControllerManager_RayInteractorUpdate_m51B5DB10D9DE735AAD0AD17B249EB99237781456,
+	ActionBasedControllerManager_RaySelectEntered_mF9AB3BB3816FC10F4A2EE1250F64877894C88560,
+	ActionBasedControllerManager_RaySelectExited_m5754105EC3EB186B271FE714C43D4FD85989BE3E,
+	ActionBasedControllerManager_Awake_m218F72512646A09591011C77FC350C86E8761271,
+	ActionBasedControllerManager_Start_m18D931BF912208154FC2425A4C2565B74BCE5897,
+	ActionBasedControllerManager_OnEnable_m51D610223E8BB80FA2AA9945D7BE39E54DB2431B,
+	ActionBasedControllerManager_OnDisable_m8B966E4F807DA7CF20155AD1239C1CE86658C535,
+	ActionBasedControllerManager_OnAfterInteractionEvents_mCF40B0815F54413521A227CA9945ACAE6EBB83FD,
+	ActionBasedControllerManager_UpdateLocomotionActions_m90E85E149A202B3BEE453D8CCE7B9DC95F9442CA,
+	ActionBasedControllerManager_UpdateTurnActions_m312043FF58D3979F121D7D62E1CE44B2D51F5CA7,
+	ActionBasedControllerManager_DisableLocomotionAndTurnActions_mABD0F9C39BD055AD8936817F53AFA77B2D8ED179,
+	ActionBasedControllerManager_EnableAction_m4F594C5139322B9A68E0A809201BFB76538E9AD8,
+	ActionBasedControllerManager_DisableAction_m7DB0495AE24BDF1E2F626F4EAFEBF580B911FA9F,
+	ActionBasedControllerManager_GetInputAction_mB065776536731D218E38E2CD6E46BA7837AEBC44,
+	ActionBasedControllerManager__ctor_m3CC27D6ED7208EDE2640264C9C20DBDCF01B130C,
+	U3COnAfterInteractionEventsU3Ed__39__ctor_mB09C1EDD58C6D53B892C4F229A78A267C8341943,
+	U3COnAfterInteractionEventsU3Ed__39_System_IDisposable_Dispose_m65F25F52041F61E8C8E51874CEDD2842B3F4C721,
+	U3COnAfterInteractionEventsU3Ed__39_MoveNext_m72D41D5EB53D6CFD3479F7209EE595B1E764ACF7,
+	U3COnAfterInteractionEventsU3Ed__39_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m805DA680A79BA6ECC9D9503FEB7A1C3B9C8DD001,
+	U3COnAfterInteractionEventsU3Ed__39_System_Collections_IEnumerator_Reset_m441FA5993DB32A0CE8245D1C21F412BD6BCD16A7,
+	U3COnAfterInteractionEventsU3Ed__39_System_Collections_IEnumerator_get_Current_m848D07E727D79CF9AA8938986441EF780B4DA9E3,
+	DynamicMoveProvider_get_headTransform_m303EF17C689C6B515494F07F2259A0BA6B8D0605,
+	DynamicMoveProvider_set_headTransform_mCB442704F390FE95E70DE479145A5F2E2E138885,
+	DynamicMoveProvider_get_leftControllerTransform_mAA1DA9B68DEEA326FC1560FDADDF454DEC69C8A8,
+	DynamicMoveProvider_set_leftControllerTransform_mF1E47F46BFE01F5355FC71BD67DD1A9CFD2C3DB1,
+	DynamicMoveProvider_get_rightControllerTransform_m6FAEE855A31155E21184B32D086F15CE9DA7C92E,
+	DynamicMoveProvider_set_rightControllerTransform_mD138BE95DF4A34447A88F1817806C4BAE2239CFA,
+	DynamicMoveProvider_get_leftHandMovementDirection_m5D0D0D4A984DC0B0CAED6DE32722BE640296ABBF,
+	DynamicMoveProvider_set_leftHandMovementDirection_mB73B1139104B7F11E0360C8E900789C0E05881F2,
+	DynamicMoveProvider_get_rightHandMovementDirection_m88088CD035CDA2ED6597F19DC5C93D8730089C7C,
+	DynamicMoveProvider_set_rightHandMovementDirection_m985C438DA67D7479D5D0AA020A8EB411856E51E5,
+	DynamicMoveProvider_Awake_m3BAB88EE73C713431D822EB7323817318C4C0711,
+	DynamicMoveProvider_ComputeDesiredMove_mADD1C5EB231A3EDA633059109A91BC4361274733,
+	DynamicMoveProvider__ctor_mABE04D06EBE852E39DDBBB9A305090A5A7B04650,
+};
+extern void XRIHeadActions__ctor_m2C79297594A86840467246813612EA95B5C0D505_AdjustorThunk (void);
+extern void XRIHeadActions_get_Position_mCB0684C609739C96B6044E3B654085BD1036BD72_AdjustorThunk (void);
+extern void XRIHeadActions_get_Rotation_m0D711C837A21AA163F6582BF5D6991623FF1055C_AdjustorThunk (void);
+extern void XRIHeadActions_Get_m6E3648FA2C90F0520AA1F257EA37BF1B362DCA0C_AdjustorThunk (void);
+extern void XRIHeadActions_Enable_m65E3157B9B9DEC5E1DAE58F276392F91A2D0E9B4_AdjustorThunk (void);
+extern void XRIHeadActions_Disable_m64A1349E803B52CD2A93B970E03452528D212F62_AdjustorThunk (void);
+extern void XRIHeadActions_get_enabled_m7420ED3378E957BDB481A559A8159CC1ED0DD528_AdjustorThunk (void);
+extern void XRIHeadActions_SetCallbacks_m31E977056A4FA03F9E05238451670687DE914E42_AdjustorThunk (void);
+extern void XRILeftHandActions__ctor_mD9DB93543EB37C78BB469A9D2319BE8F3DAE66E2_AdjustorThunk (void);
+extern void XRILeftHandActions_get_Position_mB96304BCF424F25103050DC453A2B0E0B74E1843_AdjustorThunk (void);
+extern void XRILeftHandActions_get_Rotation_mEACB83BE2FD56BE7083F9EC02C5D548F53319F73_AdjustorThunk (void);
+extern void XRILeftHandActions_get_TrackingState_mB3DD3ABBA80FF66A302D890E1214E07FCCF3BD84_AdjustorThunk (void);
+extern void XRILeftHandActions_get_HapticDevice_m0A5534F93E71161DCF1AD4C33A185514626D1545_AdjustorThunk (void);
+extern void XRILeftHandActions_Get_mE114999F7F2B3650D8902E53441D269371BCF28E_AdjustorThunk (void);
+extern void XRILeftHandActions_Enable_mEA77F2BA77FA85855DC2959E3113963B035E5803_AdjustorThunk (void);
+extern void XRILeftHandActions_Disable_m0D3EB5DF14852A6320E6C1D9ADAC1FED86F1B873_AdjustorThunk (void);
+extern void XRILeftHandActions_get_enabled_mD0FC7456F89B6546CB676DA02210E60CF4FF2AC9_AdjustorThunk (void);
+extern void XRILeftHandActions_SetCallbacks_m366CBA84473534F1DE5CC7A22E9425B23FD0AF78_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions__ctor_m2421B1D6EDF8F5899024A762663F8FEF4948B246_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_get_Select_m6077D94A06122354849DFBD0EBE57AB3197C7CF7_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_get_SelectValue_m59E2DFDABA6053F32A1BFD4B6EC1669BC26732C2_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_get_Activate_m73180F7F14DDB792CF14E64AB75F9A74EF351A46_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_get_ActivateValue_mBEB2BAD498A415AA2623D92E7F6D7ACA21BD3B11_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_get_UIPress_m38AF3C049F839A671F974D6F9239B6DE08CBA791_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_get_UIPressValue_mA617CE5CC0131ACBD771EE35DF10AC8D7F8B3756_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_get_RotateAnchor_m8C2E6A22FA214AB9A0B534B3421512A3B5D7C8FA_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_get_TranslateAnchor_m142A788D46F74CD4F1648F53BDD855057D09DA4B_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_Get_m311202F47415DEFC147B70A69492CE6ACA3A4E00_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_Enable_mAF78A8C3781522E6989C5933ABCDD2FEA3BD3E04_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_Disable_m83F4280B7DC1A54AC1D29B8CF0B1163FC5649DA1_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_get_enabled_mCC2EE36CB93AA21FFE34D34FDD2C9D67B604FEF3_AdjustorThunk (void);
+extern void XRILeftHandInteractionActions_SetCallbacks_mC9E68B1FEFDA69409FC220733E72477AC8BCFA83_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions__ctor_m8622F2E7CBBFBCDD789CB85A1A1E061CF10EEE27_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_get_TeleportSelect_mB3EDF296F8832588A2FA552AB9251AE1EBD8A1B0_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_get_TeleportModeActivate_mE2D4999193C313BC472D8466331962AE58E0BAA6_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_get_TeleportModeCancel_m576664594676144DA94FBC7E628E7DFFB9C3245F_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_get_TeleportDirection_mB491C7B88FEBD6ED10528151E5A03794652A0779_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_get_Turn_m187619A2F68F17E92FD6A3A2CED45DA6CCAAC3EF_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_get_Move_m534FB200DE77539FEF23425AF8CF84F966AE0542_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_get_GrabMove_mA42CCE816AD85F15FBD2FEF906326DC71FBE1C83_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_get_SnapTurn_mC3736DDF91A4760EC74238472E4EDD8B3F767412_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_Get_m41D7B1CCD75F93F12FC04230DD496D3021525A9B_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_Enable_m551BAC3DA3732F50780F0EE0B2A9A968DF9C509C_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_Disable_m3C23EE745324A16059C17473624BFFA9DA151BF4_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_get_enabled_m48AD07CF7B6366B71F38BF67D1E6E07C2980382F_AdjustorThunk (void);
+extern void XRILeftHandLocomotionActions_SetCallbacks_mF6B12AB110DE149BF723FC4974221C5B53F1041B_AdjustorThunk (void);
+extern void XRIRightHandActions__ctor_mF2CB7EEAF7562D0F7022C152DBD11A58A80690CC_AdjustorThunk (void);
+extern void XRIRightHandActions_get_Position_m9F732B618668D433D18274114B086A3D766681F6_AdjustorThunk (void);
+extern void XRIRightHandActions_get_Rotation_m8AA4D1F2806DDD9D3842A8EF24159E4A68953083_AdjustorThunk (void);
+extern void XRIRightHandActions_get_TrackingState_m1CFB70836A483F41E5F2474355CC9D7FC495D597_AdjustorThunk (void);
+extern void XRIRightHandActions_get_HapticDevice_mFAF7E89221FE248B1A7F3A4DA411FA3A30EAB54A_AdjustorThunk (void);
+extern void XRIRightHandActions_Get_m853DF89088D4B0B0FC901AB517BF1CE07D9B763E_AdjustorThunk (void);
+extern void XRIRightHandActions_Enable_m56108672952E232B4AF05B1C912D4021A5C6B3A4_AdjustorThunk (void);
+extern void XRIRightHandActions_Disable_mD35D2A64B9D3F8CF94AE4CD0773AF75685650B3C_AdjustorThunk (void);
+extern void XRIRightHandActions_get_enabled_mCE5495312F90A572539CFBC0631AA5CFCB69A722_AdjustorThunk (void);
+extern void XRIRightHandActions_SetCallbacks_m24DA4D0BA28D1FEB074842056665C028F7168638_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions__ctor_m3523AD5D833AB47D3AD88DA8FA87FAD5EC90635F_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_get_Select_m23AEA426442CEBC3572602F62482A72EDA88D0D6_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_get_SelectValue_m1540AA0ACCE3B0C7C2C0306DE89C923D38E46239_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_get_Activate_mF786131DF875E470BA0862EB8F42383830A38BAB_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_get_ActivateValue_m0187BA571AE746176B0BCA25596DFC304CC84AF0_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_get_UIPress_mFD60EA83F0151AC05F9082088FDB9CD0D435691D_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_get_UIPressValue_m42B4C569C08A8CABA6A8BD400EECA1EADD421855_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_get_RotateAnchor_m89440915020202E3272E7A2CE1DDB9F26B2C0E98_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_get_TranslateAnchor_mEFFDA96D60F2169EF92B99B874DAB86E2D6A377C_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_Get_m6F2581634FA93CF3BBEBA3F28213EADB36A416EF_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_Enable_m72A958F9B501149AE87C8B80246CA5966D746D5A_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_Disable_m009D549F04226A20C0155BA27E569BF5B634FA4C_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_get_enabled_mD6090FF8F0C76B61A73C7F34E7E742E502828E06_AdjustorThunk (void);
+extern void XRIRightHandInteractionActions_SetCallbacks_m1002A0BAEA286792610E03A38752804087F29422_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions__ctor_m72BFA28CFB6E14021C46FACC70102087D0419C46_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_get_TeleportSelect_mD49989144846E28388172FA65EB59FBC3C0B4C90_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_get_TeleportModeActivate_mD8097F0FB2F9B216E3DA955CAF78B1296D2F1F33_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_get_TeleportModeCancel_m3DBD7E6A5313A6A7325679080A68160888B4739F_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_get_TeleportDirection_m1F953CD8243D33602952E171930E6365C94FEEFD_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_get_Turn_m1DA54CA293B1F7F07E3FD1B1EFDCF3AC4E7AF121_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_get_Move_mA3644489FE581F32A9CE85B9417F22988CE80325_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_get_GrabMove_mB008695CBD22C76A354943DB57A1D49DA656E5C6_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_get_SnapTurn_m354C63DB3CC1CAE1FA9FAE73FE015085E7186865_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_Get_mD74B454C5342F719026BDBBB870FC348CEEE6C53_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_Enable_mE2C63CFC7ED5C02A0F66BF86C4E7D189E2E8BC0D_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_Disable_mC4CA9FEE997831A34BC6BB52827D24FDBCC610A6_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_get_enabled_m2F9860A57290BEBE2E42BA2DE50725BAAB2FB1C5_AdjustorThunk (void);
+extern void XRIRightHandLocomotionActions_SetCallbacks_m0A2CFE83E3A1BB343E96D04C6DC6855AA91FA4F9_AdjustorThunk (void);
+extern void XRIUIActions__ctor_m982E6E6980EBD49B925128ABC2AABD642084C7B7_AdjustorThunk (void);
+extern void XRIUIActions_get_Navigate_mBBD2B40570B492259D82D70F787CDCF2CFC5355D_AdjustorThunk (void);
+extern void XRIUIActions_get_Submit_mB18CD9E3C243AC0077209DD2A11DA0962F730B77_AdjustorThunk (void);
+extern void XRIUIActions_get_Cancel_mA7A1362B9427AAA24A9E6FAAC12BAA2ECFAEE6CD_AdjustorThunk (void);
+extern void XRIUIActions_get_Point_m94E008F9049085FF6E17BC377C00B48C6DF79B48_AdjustorThunk (void);
+extern void XRIUIActions_get_Click_m5B483F1381A138A6D832208DD2069D62558CDE17_AdjustorThunk (void);
+extern void XRIUIActions_get_ScrollWheel_mB37306D4E41580B4886327F7EB3A628A28F286DA_AdjustorThunk (void);
+extern void XRIUIActions_get_MiddleClick_mDA15B17917750F6FA071C5E12EFE605FC7C06C6B_AdjustorThunk (void);
+extern void XRIUIActions_get_RightClick_m698FD9FE772CE18E42FC3DEAC748D924154D2648_AdjustorThunk (void);
+extern void XRIUIActions_Get_m01A5901E4D85476C6DE0D1C53FDCCF5A8AEEC8AC_AdjustorThunk (void);
+extern void XRIUIActions_Enable_m8FAB83D0C87A4B6427809DC93AFC74542B476FC2_AdjustorThunk (void);
+extern void XRIUIActions_Disable_mCE4FE3094F4B30354BAE3A357A690D2DE608726B_AdjustorThunk (void);
+extern void XRIUIActions_get_enabled_m050C61A7CBDCABF3D624AFE9A68C214B2D91BFD0_AdjustorThunk (void);
+extern void XRIUIActions_SetCallbacks_mD3EF97BF8C40A2880B21CEC9873AF66583ABA67C_AdjustorThunk (void);
+extern void KeyboardInteractionsActions__ctor_m69C0A5D7E06738A6F537AF7E21BF20F2A8DE773F_AdjustorThunk (void);
+extern void KeyboardInteractionsActions_get_Space_mC5A83327F14001B16A728535E1A0A906A89936C6_AdjustorThunk (void);
+extern void KeyboardInteractionsActions_Get_mABAFD48BF8391E6B8C6940D3E45AF1718B13B93E_AdjustorThunk (void);
+extern void KeyboardInteractionsActions_Enable_mEB60A1C8B561DBB5F4FE29FF49D649DCBD2559B3_AdjustorThunk (void);
+extern void KeyboardInteractionsActions_Disable_mCC98D256442776728BC5410ECC0EC6D86421BCA4_AdjustorThunk (void);
+extern void KeyboardInteractionsActions_get_enabled_m06CBB06CFF02AB40ECB0594761AC12BAD14E1591_AdjustorThunk (void);
+extern void KeyboardInteractionsActions_SetCallbacks_m0DB8B0718FC34A549ACF724FCD2B03256438C45B_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[105] = 
+{
+	{ 0x0600001D, XRIHeadActions__ctor_m2C79297594A86840467246813612EA95B5C0D505_AdjustorThunk },
+	{ 0x0600001E, XRIHeadActions_get_Position_mCB0684C609739C96B6044E3B654085BD1036BD72_AdjustorThunk },
+	{ 0x0600001F, XRIHeadActions_get_Rotation_m0D711C837A21AA163F6582BF5D6991623FF1055C_AdjustorThunk },
+	{ 0x06000020, XRIHeadActions_Get_m6E3648FA2C90F0520AA1F257EA37BF1B362DCA0C_AdjustorThunk },
+	{ 0x06000021, XRIHeadActions_Enable_m65E3157B9B9DEC5E1DAE58F276392F91A2D0E9B4_AdjustorThunk },
+	{ 0x06000022, XRIHeadActions_Disable_m64A1349E803B52CD2A93B970E03452528D212F62_AdjustorThunk },
+	{ 0x06000023, XRIHeadActions_get_enabled_m7420ED3378E957BDB481A559A8159CC1ED0DD528_AdjustorThunk },
+	{ 0x06000025, XRIHeadActions_SetCallbacks_m31E977056A4FA03F9E05238451670687DE914E42_AdjustorThunk },
+	{ 0x06000026, XRILeftHandActions__ctor_mD9DB93543EB37C78BB469A9D2319BE8F3DAE66E2_AdjustorThunk },
+	{ 0x06000027, XRILeftHandActions_get_Position_mB96304BCF424F25103050DC453A2B0E0B74E1843_AdjustorThunk },
+	{ 0x06000028, XRILeftHandActions_get_Rotation_mEACB83BE2FD56BE7083F9EC02C5D548F53319F73_AdjustorThunk },
+	{ 0x06000029, XRILeftHandActions_get_TrackingState_mB3DD3ABBA80FF66A302D890E1214E07FCCF3BD84_AdjustorThunk },
+	{ 0x0600002A, XRILeftHandActions_get_HapticDevice_m0A5534F93E71161DCF1AD4C33A185514626D1545_AdjustorThunk },
+	{ 0x0600002B, XRILeftHandActions_Get_mE114999F7F2B3650D8902E53441D269371BCF28E_AdjustorThunk },
+	{ 0x0600002C, XRILeftHandActions_Enable_mEA77F2BA77FA85855DC2959E3113963B035E5803_AdjustorThunk },
+	{ 0x0600002D, XRILeftHandActions_Disable_m0D3EB5DF14852A6320E6C1D9ADAC1FED86F1B873_AdjustorThunk },
+	{ 0x0600002E, XRILeftHandActions_get_enabled_mD0FC7456F89B6546CB676DA02210E60CF4FF2AC9_AdjustorThunk },
+	{ 0x06000030, XRILeftHandActions_SetCallbacks_m366CBA84473534F1DE5CC7A22E9425B23FD0AF78_AdjustorThunk },
+	{ 0x06000031, XRILeftHandInteractionActions__ctor_m2421B1D6EDF8F5899024A762663F8FEF4948B246_AdjustorThunk },
+	{ 0x06000032, XRILeftHandInteractionActions_get_Select_m6077D94A06122354849DFBD0EBE57AB3197C7CF7_AdjustorThunk },
+	{ 0x06000033, XRILeftHandInteractionActions_get_SelectValue_m59E2DFDABA6053F32A1BFD4B6EC1669BC26732C2_AdjustorThunk },
+	{ 0x06000034, XRILeftHandInteractionActions_get_Activate_m73180F7F14DDB792CF14E64AB75F9A74EF351A46_AdjustorThunk },
+	{ 0x06000035, XRILeftHandInteractionActions_get_ActivateValue_mBEB2BAD498A415AA2623D92E7F6D7ACA21BD3B11_AdjustorThunk },
+	{ 0x06000036, XRILeftHandInteractionActions_get_UIPress_m38AF3C049F839A671F974D6F9239B6DE08CBA791_AdjustorThunk },
+	{ 0x06000037, XRILeftHandInteractionActions_get_UIPressValue_mA617CE5CC0131ACBD771EE35DF10AC8D7F8B3756_AdjustorThunk },
+	{ 0x06000038, XRILeftHandInteractionActions_get_RotateAnchor_m8C2E6A22FA214AB9A0B534B3421512A3B5D7C8FA_AdjustorThunk },
+	{ 0x06000039, XRILeftHandInteractionActions_get_TranslateAnchor_m142A788D46F74CD4F1648F53BDD855057D09DA4B_AdjustorThunk },
+	{ 0x0600003A, XRILeftHandInteractionActions_Get_m311202F47415DEFC147B70A69492CE6ACA3A4E00_AdjustorThunk },
+	{ 0x0600003B, XRILeftHandInteractionActions_Enable_mAF78A8C3781522E6989C5933ABCDD2FEA3BD3E04_AdjustorThunk },
+	{ 0x0600003C, XRILeftHandInteractionActions_Disable_m83F4280B7DC1A54AC1D29B8CF0B1163FC5649DA1_AdjustorThunk },
+	{ 0x0600003D, XRILeftHandInteractionActions_get_enabled_mCC2EE36CB93AA21FFE34D34FDD2C9D67B604FEF3_AdjustorThunk },
+	{ 0x0600003F, XRILeftHandInteractionActions_SetCallbacks_mC9E68B1FEFDA69409FC220733E72477AC8BCFA83_AdjustorThunk },
+	{ 0x06000040, XRILeftHandLocomotionActions__ctor_m8622F2E7CBBFBCDD789CB85A1A1E061CF10EEE27_AdjustorThunk },
+	{ 0x06000041, XRILeftHandLocomotionActions_get_TeleportSelect_mB3EDF296F8832588A2FA552AB9251AE1EBD8A1B0_AdjustorThunk },
+	{ 0x06000042, XRILeftHandLocomotionActions_get_TeleportModeActivate_mE2D4999193C313BC472D8466331962AE58E0BAA6_AdjustorThunk },
+	{ 0x06000043, XRILeftHandLocomotionActions_get_TeleportModeCancel_m576664594676144DA94FBC7E628E7DFFB9C3245F_AdjustorThunk },
+	{ 0x06000044, XRILeftHandLocomotionActions_get_TeleportDirection_mB491C7B88FEBD6ED10528151E5A03794652A0779_AdjustorThunk },
+	{ 0x06000045, XRILeftHandLocomotionActions_get_Turn_m187619A2F68F17E92FD6A3A2CED45DA6CCAAC3EF_AdjustorThunk },
+	{ 0x06000046, XRILeftHandLocomotionActions_get_Move_m534FB200DE77539FEF23425AF8CF84F966AE0542_AdjustorThunk },
+	{ 0x06000047, XRILeftHandLocomotionActions_get_GrabMove_mA42CCE816AD85F15FBD2FEF906326DC71FBE1C83_AdjustorThunk },
+	{ 0x06000048, XRILeftHandLocomotionActions_get_SnapTurn_mC3736DDF91A4760EC74238472E4EDD8B3F767412_AdjustorThunk },
+	{ 0x06000049, XRILeftHandLocomotionActions_Get_m41D7B1CCD75F93F12FC04230DD496D3021525A9B_AdjustorThunk },
+	{ 0x0600004A, XRILeftHandLocomotionActions_Enable_m551BAC3DA3732F50780F0EE0B2A9A968DF9C509C_AdjustorThunk },
+	{ 0x0600004B, XRILeftHandLocomotionActions_Disable_m3C23EE745324A16059C17473624BFFA9DA151BF4_AdjustorThunk },
+	{ 0x0600004C, XRILeftHandLocomotionActions_get_enabled_m48AD07CF7B6366B71F38BF67D1E6E07C2980382F_AdjustorThunk },
+	{ 0x0600004E, XRILeftHandLocomotionActions_SetCallbacks_mF6B12AB110DE149BF723FC4974221C5B53F1041B_AdjustorThunk },
+	{ 0x0600004F, XRIRightHandActions__ctor_mF2CB7EEAF7562D0F7022C152DBD11A58A80690CC_AdjustorThunk },
+	{ 0x06000050, XRIRightHandActions_get_Position_m9F732B618668D433D18274114B086A3D766681F6_AdjustorThunk },
+	{ 0x06000051, XRIRightHandActions_get_Rotation_m8AA4D1F2806DDD9D3842A8EF24159E4A68953083_AdjustorThunk },
+	{ 0x06000052, XRIRightHandActions_get_TrackingState_m1CFB70836A483F41E5F2474355CC9D7FC495D597_AdjustorThunk },
+	{ 0x06000053, XRIRightHandActions_get_HapticDevice_mFAF7E89221FE248B1A7F3A4DA411FA3A30EAB54A_AdjustorThunk },
+	{ 0x06000054, XRIRightHandActions_Get_m853DF89088D4B0B0FC901AB517BF1CE07D9B763E_AdjustorThunk },
+	{ 0x06000055, XRIRightHandActions_Enable_m56108672952E232B4AF05B1C912D4021A5C6B3A4_AdjustorThunk },
+	{ 0x06000056, XRIRightHandActions_Disable_mD35D2A64B9D3F8CF94AE4CD0773AF75685650B3C_AdjustorThunk },
+	{ 0x06000057, XRIRightHandActions_get_enabled_mCE5495312F90A572539CFBC0631AA5CFCB69A722_AdjustorThunk },
+	{ 0x06000059, XRIRightHandActions_SetCallbacks_m24DA4D0BA28D1FEB074842056665C028F7168638_AdjustorThunk },
+	{ 0x0600005A, XRIRightHandInteractionActions__ctor_m3523AD5D833AB47D3AD88DA8FA87FAD5EC90635F_AdjustorThunk },
+	{ 0x0600005B, XRIRightHandInteractionActions_get_Select_m23AEA426442CEBC3572602F62482A72EDA88D0D6_AdjustorThunk },
+	{ 0x0600005C, XRIRightHandInteractionActions_get_SelectValue_m1540AA0ACCE3B0C7C2C0306DE89C923D38E46239_AdjustorThunk },
+	{ 0x0600005D, XRIRightHandInteractionActions_get_Activate_mF786131DF875E470BA0862EB8F42383830A38BAB_AdjustorThunk },
+	{ 0x0600005E, XRIRightHandInteractionActions_get_ActivateValue_m0187BA571AE746176B0BCA25596DFC304CC84AF0_AdjustorThunk },
+	{ 0x0600005F, XRIRightHandInteractionActions_get_UIPress_mFD60EA83F0151AC05F9082088FDB9CD0D435691D_AdjustorThunk },
+	{ 0x06000060, XRIRightHandInteractionActions_get_UIPressValue_m42B4C569C08A8CABA6A8BD400EECA1EADD421855_AdjustorThunk },
+	{ 0x06000061, XRIRightHandInteractionActions_get_RotateAnchor_m89440915020202E3272E7A2CE1DDB9F26B2C0E98_AdjustorThunk },
+	{ 0x06000062, XRIRightHandInteractionActions_get_TranslateAnchor_mEFFDA96D60F2169EF92B99B874DAB86E2D6A377C_AdjustorThunk },
+	{ 0x06000063, XRIRightHandInteractionActions_Get_m6F2581634FA93CF3BBEBA3F28213EADB36A416EF_AdjustorThunk },
+	{ 0x06000064, XRIRightHandInteractionActions_Enable_m72A958F9B501149AE87C8B80246CA5966D746D5A_AdjustorThunk },
+	{ 0x06000065, XRIRightHandInteractionActions_Disable_m009D549F04226A20C0155BA27E569BF5B634FA4C_AdjustorThunk },
+	{ 0x06000066, XRIRightHandInteractionActions_get_enabled_mD6090FF8F0C76B61A73C7F34E7E742E502828E06_AdjustorThunk },
+	{ 0x06000068, XRIRightHandInteractionActions_SetCallbacks_m1002A0BAEA286792610E03A38752804087F29422_AdjustorThunk },
+	{ 0x06000069, XRIRightHandLocomotionActions__ctor_m72BFA28CFB6E14021C46FACC70102087D0419C46_AdjustorThunk },
+	{ 0x0600006A, XRIRightHandLocomotionActions_get_TeleportSelect_mD49989144846E28388172FA65EB59FBC3C0B4C90_AdjustorThunk },
+	{ 0x0600006B, XRIRightHandLocomotionActions_get_TeleportModeActivate_mD8097F0FB2F9B216E3DA955CAF78B1296D2F1F33_AdjustorThunk },
+	{ 0x0600006C, XRIRightHandLocomotionActions_get_TeleportModeCancel_m3DBD7E6A5313A6A7325679080A68160888B4739F_AdjustorThunk },
+	{ 0x0600006D, XRIRightHandLocomotionActions_get_TeleportDirection_m1F953CD8243D33602952E171930E6365C94FEEFD_AdjustorThunk },
+	{ 0x0600006E, XRIRightHandLocomotionActions_get_Turn_m1DA54CA293B1F7F07E3FD1B1EFDCF3AC4E7AF121_AdjustorThunk },
+	{ 0x0600006F, XRIRightHandLocomotionActions_get_Move_mA3644489FE581F32A9CE85B9417F22988CE80325_AdjustorThunk },
+	{ 0x06000070, XRIRightHandLocomotionActions_get_GrabMove_mB008695CBD22C76A354943DB57A1D49DA656E5C6_AdjustorThunk },
+	{ 0x06000071, XRIRightHandLocomotionActions_get_SnapTurn_m354C63DB3CC1CAE1FA9FAE73FE015085E7186865_AdjustorThunk },
+	{ 0x06000072, XRIRightHandLocomotionActions_Get_mD74B454C5342F719026BDBBB870FC348CEEE6C53_AdjustorThunk },
+	{ 0x06000073, XRIRightHandLocomotionActions_Enable_mE2C63CFC7ED5C02A0F66BF86C4E7D189E2E8BC0D_AdjustorThunk },
+	{ 0x06000074, XRIRightHandLocomotionActions_Disable_mC4CA9FEE997831A34BC6BB52827D24FDBCC610A6_AdjustorThunk },
+	{ 0x06000075, XRIRightHandLocomotionActions_get_enabled_m2F9860A57290BEBE2E42BA2DE50725BAAB2FB1C5_AdjustorThunk },
+	{ 0x06000077, XRIRightHandLocomotionActions_SetCallbacks_m0A2CFE83E3A1BB343E96D04C6DC6855AA91FA4F9_AdjustorThunk },
+	{ 0x06000078, XRIUIActions__ctor_m982E6E6980EBD49B925128ABC2AABD642084C7B7_AdjustorThunk },
+	{ 0x06000079, XRIUIActions_get_Navigate_mBBD2B40570B492259D82D70F787CDCF2CFC5355D_AdjustorThunk },
+	{ 0x0600007A, XRIUIActions_get_Submit_mB18CD9E3C243AC0077209DD2A11DA0962F730B77_AdjustorThunk },
+	{ 0x0600007B, XRIUIActions_get_Cancel_mA7A1362B9427AAA24A9E6FAAC12BAA2ECFAEE6CD_AdjustorThunk },
+	{ 0x0600007C, XRIUIActions_get_Point_m94E008F9049085FF6E17BC377C00B48C6DF79B48_AdjustorThunk },
+	{ 0x0600007D, XRIUIActions_get_Click_m5B483F1381A138A6D832208DD2069D62558CDE17_AdjustorThunk },
+	{ 0x0600007E, XRIUIActions_get_ScrollWheel_mB37306D4E41580B4886327F7EB3A628A28F286DA_AdjustorThunk },
+	{ 0x0600007F, XRIUIActions_get_MiddleClick_mDA15B17917750F6FA071C5E12EFE605FC7C06C6B_AdjustorThunk },
+	{ 0x06000080, XRIUIActions_get_RightClick_m698FD9FE772CE18E42FC3DEAC748D924154D2648_AdjustorThunk },
+	{ 0x06000081, XRIUIActions_Get_m01A5901E4D85476C6DE0D1C53FDCCF5A8AEEC8AC_AdjustorThunk },
+	{ 0x06000082, XRIUIActions_Enable_m8FAB83D0C87A4B6427809DC93AFC74542B476FC2_AdjustorThunk },
+	{ 0x06000083, XRIUIActions_Disable_mCE4FE3094F4B30354BAE3A357A690D2DE608726B_AdjustorThunk },
+	{ 0x06000084, XRIUIActions_get_enabled_m050C61A7CBDCABF3D624AFE9A68C214B2D91BFD0_AdjustorThunk },
+	{ 0x06000086, XRIUIActions_SetCallbacks_mD3EF97BF8C40A2880B21CEC9873AF66583ABA67C_AdjustorThunk },
+	{ 0x06000087, KeyboardInteractionsActions__ctor_m69C0A5D7E06738A6F537AF7E21BF20F2A8DE773F_AdjustorThunk },
+	{ 0x06000088, KeyboardInteractionsActions_get_Space_mC5A83327F14001B16A728535E1A0A906A89936C6_AdjustorThunk },
+	{ 0x06000089, KeyboardInteractionsActions_Get_mABAFD48BF8391E6B8C6940D3E45AF1718B13B93E_AdjustorThunk },
+	{ 0x0600008A, KeyboardInteractionsActions_Enable_mEB60A1C8B561DBB5F4FE29FF49D649DCBD2559B3_AdjustorThunk },
+	{ 0x0600008B, KeyboardInteractionsActions_Disable_mCC98D256442776728BC5410ECC0EC6D86421BCA4_AdjustorThunk },
+	{ 0x0600008C, KeyboardInteractionsActions_get_enabled_m06CBB06CFF02AB40ECB0594761AC12BAD14E1591_AdjustorThunk },
+	{ 0x0600008E, KeyboardInteractionsActions_SetCallbacks_m0DB8B0718FC34A549ACF724FCD2B03256438C45B_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[240] = 
+{
+	5348,
+	5456,
+	5456,
+	5164,
+	4187,
+	5162,
+	4185,
+	5175,
+	3068,
+	5348,
+	5348,
+	5456,
+	5456,
+	5348,
+	1821,
+	1555,
+	5575,
+	5576,
+	5577,
+	5578,
+	5579,
+	5580,
+	5581,
+	5582,
+	5574,
+	5307,
+	5307,
+	5307,
+	4360,
+	5348,
+	5348,
+	5348,
+	5456,
+	5456,
+	5256,
+	7816,
+	4360,
+	4360,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5456,
+	5456,
+	5256,
+	7817,
+	4360,
+	4360,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5456,
+	5456,
+	5256,
+	7818,
+	4360,
+	4360,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5456,
+	5456,
+	5256,
+	7819,
+	4360,
+	4360,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5456,
+	5456,
+	5256,
+	7820,
+	4360,
+	4360,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5456,
+	5456,
+	5256,
+	7821,
+	4360,
+	4360,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5456,
+	5456,
+	5256,
+	7822,
+	4360,
+	4360,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5348,
+	5456,
+	5456,
+	5256,
+	7823,
+	4360,
+	4360,
+	5348,
+	5348,
+	5456,
+	5456,
+	5256,
+	7815,
+	4360,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	5256,
+	4267,
+	5256,
+	4267,
+	5456,
+	5456,
+	4479,
+	4479,
+	4360,
+	4360,
+	4360,
+	4360,
+	5456,
+	5456,
+	4360,
+	4360,
+	5456,
+	5456,
+	5456,
+	5456,
+	5348,
+	5456,
+	5456,
+	5456,
+	7988,
+	7988,
+	7793,
+	5456,
+	4334,
+	5456,
+	5256,
+	5348,
+	5456,
+	5348,
+	5348,
+	4360,
+	5348,
+	4360,
+	5348,
+	4360,
+	5319,
+	4334,
+	5319,
+	4334,
+	5456,
+	4018,
+	5456,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_XR_Interaction_Toolkit_Samples_StarterAssets_CodeGenModule;
+const Il2CppCodeGenModule g_Unity_XR_Interaction_Toolkit_Samples_StarterAssets_CodeGenModule = 
+{
+	"Unity.XR.Interaction.Toolkit.Samples.StarterAssets.dll",
+	240,
+	s_methodPointers,
+	105,
+	s_adjustorThunks,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};
