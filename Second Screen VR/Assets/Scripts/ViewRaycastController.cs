@@ -10,11 +10,13 @@ public class ViewRaycastController : MonoBehaviour
     public TimeSpan totalSecondScreenTime;
     public TimeSpan totalBackgroundTime;
 
+    public TimeSpan totalMainScreenSectionTime;
+    public TimeSpan totalSecondScreenSectionTime;
+    public TimeSpan totalBackgroundSectionTime;
+
     public Stopwatch mainScreenStopwatch;
     public Stopwatch secondScreenStopwatch;
     public Stopwatch backgroundStopwatch;
-
-    public 
 
     // Start is called before the first frame update
     void Awake()
@@ -22,6 +24,14 @@ public class ViewRaycastController : MonoBehaviour
         mainScreenStopwatch = new Stopwatch();
         secondScreenStopwatch = new Stopwatch();
         backgroundStopwatch = new Stopwatch();
+
+        totalMainScreenSectionTime = System.TimeSpan.Zero;
+        totalSecondScreenSectionTime = System.TimeSpan.Zero;
+        totalBackgroundSectionTime = System.TimeSpan.Zero;
+
+        totalMainScreenTime = System.TimeSpan.Zero;
+        totalSecondScreenTime = System.TimeSpan.Zero;
+        totalBackgroundTime = System.TimeSpan.Zero;
 
     }
 
@@ -49,6 +59,38 @@ public class ViewRaycastController : MonoBehaviour
         DataLogControler.Instance.WriteToFile("Application quit. " + DateTime.Now);
     }
 
+    public void writeTotalSectionViewingTimes()
+    {
+
+        string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+            totalMainScreenSectionTime.Hours, totalMainScreenSectionTime.Minutes, totalMainScreenSectionTime.Seconds,
+            totalMainScreenSectionTime.Milliseconds / 10);
+
+        DataLogControler.Instance.WriteToFile("Total time viewing main screen for this section: " + elapsedTime);
+
+        elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+            totalBackgroundSectionTime.Hours, totalBackgroundSectionTime.Minutes, totalBackgroundSectionTime.Seconds,
+            totalBackgroundSectionTime.Milliseconds / 10);
+
+        DataLogControler.Instance.WriteToFile("Total time viewing background for this section: " + elapsedTime);
+
+        elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+            totalSecondScreenSectionTime.Hours, totalSecondScreenSectionTime.Minutes, totalSecondScreenSectionTime.Seconds,
+            totalSecondScreenSectionTime.Milliseconds / 10);
+
+        DataLogControler.Instance.WriteToFile("Total time viewing second screen for this section: " + elapsedTime);
+        resetSectionTotals();
+    }
+
+
+    public void resetSectionTotals()
+    {
+        totalMainScreenSectionTime = System.TimeSpan.Zero;
+        totalSecondScreenSectionTime = System.TimeSpan.Zero;
+        totalBackgroundSectionTime = System.TimeSpan.Zero;
+        
+    }
+
     public void test(int tet)
     {
         UnityEngine.Debug.Log("Test");
@@ -74,6 +116,7 @@ public class ViewRaycastController : MonoBehaviour
         UnityEngine.Debug.Log("User has exited the main screen bounding box, they were in there for: " + elapsedTime);
 
         totalMainScreenTime = totalMainScreenTime + ts;
+        totalMainScreenSectionTime = totalMainScreenSectionTime + ts;
 
         DataLogControler.Instance.WriteToFile("User has exited the main screen bounding box, they were in there for: " + elapsedTime + " - " + DateTime.Now);
         DataLogControler.Instance.WriteToFile(System.Environment.NewLine);
@@ -101,6 +144,7 @@ public class ViewRaycastController : MonoBehaviour
         UnityEngine.Debug.Log("User has exited the background bounding box, they were in there for: " + elapsedTime);
 
         totalBackgroundTime = totalBackgroundTime + ts;
+        totalBackgroundSectionTime = totalBackgroundSectionTime + ts;
 
         DataLogControler.Instance.WriteToFile("User has exited the background bounding box, they were in there for: " + elapsedTime + " - " + DateTime.Now);
         DataLogControler.Instance.WriteToFile(System.Environment.NewLine);
@@ -128,6 +172,7 @@ public class ViewRaycastController : MonoBehaviour
         UnityEngine.Debug.Log("User has exited one of the second screen bounding boxes, they were in there for: " + elapsedTime);
 
         totalSecondScreenTime = totalSecondScreenTime + ts;
+        totalSecondScreenSectionTime = totalSecondScreenSectionTime + ts;
 
         DataLogControler.Instance.WriteToFile("User has exited one of the secondary screen bounding boxes, they were in there for: " + elapsedTime + " - " + DateTime.Now);
         DataLogControler.Instance.WriteToFile(System.Environment.NewLine);

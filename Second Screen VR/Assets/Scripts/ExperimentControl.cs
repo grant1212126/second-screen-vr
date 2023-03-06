@@ -39,21 +39,17 @@ public class ExperimentControl : MonoBehaviour
     void Awake()
     {
 
-        Screens = new GameObject[3];
-
-        Screens[0] = sideScreen;
-        Screens[1] = monitorScreen;
-        Screens[2] = phoneScreen;
-
         IntroCanvas = GameObject.Find("Introduction Canvas");
         PostClipCanvas = GameObject.Find("Post Clip Canvas");
+
+        Screens = new GameObject[4];
 
         videoCount = 0;
         
         enableObject(mainScreen);
         enableObject(IntroCanvas);
 
-        enableBackgroundBoundingBoxes();
+        disableMainScreenBoundingBox();
 
         disableObject(backgroundPlanes);
         disableObject(monitorScreen);
@@ -73,12 +69,12 @@ public class ExperimentControl : MonoBehaviour
         item.SetActive(true);
     }
 
-    public void enableBackgroundBoundingBoxes()
+    public void enableMainScreenBoundingBox()
     {
         mainScreen.GetComponent<XRSimpleInteractable>().enabled = true;
     }
 
-    public void disableBackgroundBoundingBoxes()
+    public void disableMainScreenBoundingBox()
     {
         mainScreen.GetComponent<XRSimpleInteractable>().enabled = false;
     }
@@ -88,10 +84,8 @@ public class ExperimentControl : MonoBehaviour
         item.SetActive(false);
     }
 
-    public void organiseVideoOrder(string videoOrderNumber)
+    public void organiseVideoAndScreenOrder(string videoOrderNumber)
     {
-
-        int mod = 0;
 
         VideoClip[] videoOrder = new VideoClip[4];
         VideoClip[] factOrder = new VideoClip[4];
@@ -104,27 +98,74 @@ public class ExperimentControl : MonoBehaviour
         switch (videoOrderNumber)
         {
             case "1":
-                mod = 0;
+                
+                Screens[0] = null;
+                Screens[1] = sideScreen;
+                Screens[2] = monitorScreen;
+                Screens[3] = phoneScreen;
+
+                videoClips[0] = videoOrder[0];
+                videoClips[1] = videoOrder[1];
+                videoClips[2] = videoOrder[2];
+                videoClips[3] = videoOrder[3];
+
+                factClips[0] = factOrder[0];
+                factClips[1] = factOrder[1];
+                factClips[2] = factOrder[2];
+                factClips[3] = factOrderPhone[3];
                 break;
             case "2":
-                mod = 3;
+                
+                Screens[0] = sideScreen;
+                Screens[1] = null;
+                Screens[2] = phoneScreen;
+                Screens[3] = monitorScreen;
+
+                videoClips[0] = videoOrder[3];
+                videoClips[1] = videoOrder[2];
+                videoClips[2] = videoOrder[1];
+                videoClips[3] = videoOrder[0];
+
+                factClips[0] = factOrder[3];
+                factClips[1] = factOrder[2];
+                factClips[2] = factOrderPhone[1];
+                factClips[3] = factOrder[0];
                 break;
             case "3":
-                mod = 2;
+                
+                Screens[0] = monitorScreen;
+                Screens[1] = phoneScreen;
+                Screens[2] = null;
+                Screens[3] = sideScreen;
+
+                videoClips[0] = videoOrder[1];
+                videoClips[1] = videoOrder[0];
+                videoClips[2] = videoOrder[3];
+                videoClips[3] = videoOrder[2];
+
+                factClips[0] = factOrder[1];
+                factClips[1] = factOrderPhone[0];
+                factClips[2] = factOrder[3];
+                factClips[3] = factOrder[2];
                 break;
             case "4":
-                mod = 1;
+                
+                Screens[0] = phoneScreen;
+                Screens[1] = monitorScreen;
+                Screens[2] = sideScreen;
+                Screens[3] = null;
+
+                videoClips[0] = videoOrder[2];
+                videoClips[1] = videoOrder[3];
+                videoClips[2] = videoOrder[0];
+                videoClips[3] = videoOrder[1];
+
+                factClips[0] = factOrderPhone[2];
+                factClips[1] = factOrder[3];
+                factClips[2] = factOrder[0];
+                factClips[3] = factOrder[1];
                 break;
 
-        }
-
-        for (int i = 0; i < 4; i = i +1)
-        {
-            videoClips[i] = videoOrder[mod];
-            factClips[i] = factOrder[mod];
-            factClipsPhone[i] = factOrderPhone[mod];
-            mod = (mod + 1) % 4;
-            Debug.Log(mod);
         }
     }
 
@@ -151,7 +192,7 @@ public class ExperimentControl : MonoBehaviour
 
         string videoOrderNumber = GameObject.Find("Video Order Input").GetComponent<TMP_InputField>().text;
 
-        organiseVideoOrder(videoOrderNumber);
+        organiseVideoAndScreenOrder(videoOrderNumber);
         
         disableObject(IntroCanvas);
 
@@ -165,32 +206,29 @@ public class ExperimentControl : MonoBehaviour
 
         DataLogControler.Instance.WriteToFile("User has started video number: " + videoNumber + " " + DateTime.Now);
 
-        enableBackgroundBoundingBoxes();
+        enableMainScreenBoundingBox();
 
         enableObject(Secondscreen);
         enableObject(backgroundPlanes);
 
         int length = 0;
 
-        if (videoNumber == 3)
-        {
-            length = PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoClips[videoNumber]);
-            PlayVideo(Secondscreen.GetComponent<VideoPlayer>(), factClipsPhone[videoNumber]);
-        } else
-        {
-            length = PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoClips[videoNumber]);
-            PlayVideo(Secondscreen.GetComponent<VideoPlayer>(), factClips[videoNumber]);
-        }
+        
+        length = PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoClips[videoNumber]);
+        PlayVideo(Secondscreen.GetComponent<VideoPlayer>(), factClips[videoNumber]);
+        
 
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(length);
 
         videoCount = videoCount + 1;
 
         disableObject(Secondscreen);
         disableObject(backgroundPlanes);
-        disableBackgroundBoundingBoxes();
+        disableMainScreenBoundingBox();
 
         DataLogControler.Instance.WriteToFile("User has finished video number: " + videoNumber + " " + DateTime.Now);
+
+        raycastController.writeTotalSectionViewingTimes();
 
         enableObject(PostClipCanvas);
 
@@ -219,18 +257,23 @@ public class ExperimentControl : MonoBehaviour
 
         DataLogControler.Instance.WriteToFile("User has started video number: " + videoNumber + " " + DateTime.Now);
 
-        enableBackgroundBoundingBoxes();
+        enableMainScreenBoundingBox();
 
         enableObject(backgroundPlanes);
 
         int length = PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoClips[videoNumber]);
 
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(length);
 
         videoCount = videoCount + 1;
 
-        disableBackgroundBoundingBoxes();
+        disableMainScreenBoundingBox();
         disableObject(backgroundPlanes);
+
+        DataLogControler.Instance.WriteToFile("User has finished video number: " + videoNumber + " " + DateTime.Now);
+
+        raycastController.writeTotalSectionViewingTimes();
+
 
         enableObject(PostClipCanvas);
 
@@ -240,12 +283,12 @@ public class ExperimentControl : MonoBehaviour
     {
         disableObject(PostClipCanvas);
 
-        if (videoCount == 0)
+        if (Screens[videoCount] == null)
         {
             StartCoroutine(startSection(videoCount));
         } else
         { 
-        StartCoroutine(startSection(Screens[videoCount - 1], videoCount));
+        StartCoroutine(startSection(Screens[videoCount], videoCount));
         }
     }
 
