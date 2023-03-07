@@ -55,6 +55,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.QuestBuild_BackUpThisFolder_ButDontShipItWithYourGame
 
 # Crashlytics generated file
 crashlytics-build.properties
