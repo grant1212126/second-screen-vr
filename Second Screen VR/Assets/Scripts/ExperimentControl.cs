@@ -7,7 +7,6 @@ using UnityEngine.Video;
 using UnityEngine;
 using TMPro;
 
-
 public class ExperimentControl : MonoBehaviour
 {
     public ViewRaycastController raycastController;
@@ -28,21 +27,24 @@ public class ExperimentControl : MonoBehaviour
     public VideoClip[] factClips;
     public VideoClip[] factClipsPhone;
 
-    int videoCount;
+    public int[] factTimes1;
+    public int[] factTimes2;
+    public int[] factTimes3;
+    public int[] factTimes4;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int[][] factTimes;
+
+    public XRController controller;
+
+    int videoCount;
 
     void Awake()
     {
-
         IntroCanvas = GameObject.Find("Introduction Canvas");
         PostClipCanvas = GameObject.Find("Post Clip Canvas");
 
         Screens = new GameObject[4];
+        factTimes = new int[4][];
 
         videoCount = 0;
         
@@ -58,15 +60,25 @@ public class ExperimentControl : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void enableObject(GameObject item)
     {
         item.SetActive(true);
+    }
+
+    public void disableObject(GameObject item)
+    {
+        item.SetActive(false);
+    }
+
+    IEnumerator enableController(XRController item, int length)
+    {
+        yield return new WaitForSeconds(length);
+        item.GetComponent<XRInteractorLineVisual>().enabled = true;
+    }
+
+    public void disableController(XRController item)
+    {
+        item.GetComponent<XRInteractorLineVisual>().enabled = false;
     }
 
     public void enableMainScreenBoundingBox()
@@ -79,10 +91,6 @@ public class ExperimentControl : MonoBehaviour
         mainScreen.GetComponent<XRSimpleInteractable>().enabled = false;
     }
 
-    public void disableObject(GameObject item)
-    {
-        item.SetActive(false);
-    }
 
     public void organiseVideoAndScreenOrder(string videoOrderNumber)
     {
@@ -97,7 +105,7 @@ public class ExperimentControl : MonoBehaviour
 
         switch (videoOrderNumber)
         {
-            case "1":
+            case "1": 
                 
                 Screens[0] = null;
                 Screens[1] = sideScreen;
@@ -109,10 +117,16 @@ public class ExperimentControl : MonoBehaviour
                 videoClips[2] = videoOrder[2];
                 videoClips[3] = videoOrder[3];
 
+                factTimes[0] = factTimes1;
+                factTimes[1] = factTimes2;
+                factTimes[2] = factTimes3;
+                factTimes[3] = factTimes4;
+
                 factClips[0] = factOrder[0];
                 factClips[1] = factOrder[1];
                 factClips[2] = factOrder[2];
                 factClips[3] = factOrderPhone[3];
+
                 break;
             case "2":
                 
@@ -125,6 +139,11 @@ public class ExperimentControl : MonoBehaviour
                 videoClips[1] = videoOrder[2];
                 videoClips[2] = videoOrder[1];
                 videoClips[3] = videoOrder[0];
+
+                factTimes[0] = factTimes4;
+                factTimes[1] = factTimes3;
+                factTimes[2] = factTimes2;
+                factTimes[3] = factTimes1;
 
                 factClips[0] = factOrder[3];
                 factClips[1] = factOrder[2];
@@ -143,6 +162,11 @@ public class ExperimentControl : MonoBehaviour
                 videoClips[2] = videoOrder[3];
                 videoClips[3] = videoOrder[2];
 
+                factTimes[0] = factTimes2;
+                factTimes[1] = factTimes1;
+                factTimes[2] = factTimes4;
+                factTimes[3] = factTimes3;
+
                 factClips[0] = factOrder[1];
                 factClips[1] = factOrderPhone[0];
                 factClips[2] = factOrder[3];
@@ -159,6 +183,11 @@ public class ExperimentControl : MonoBehaviour
                 videoClips[1] = videoOrder[3];
                 videoClips[2] = videoOrder[0];
                 videoClips[3] = videoOrder[1];
+
+                factTimes[0] = factTimes3;
+                factTimes[1] = factTimes4;
+                factTimes[2] = factTimes1;
+                factTimes[3] = factTimes2;
 
                 factClips[0] = factOrderPhone[2];
                 factClips[1] = factOrder[3];
@@ -200,7 +229,7 @@ public class ExperimentControl : MonoBehaviour
 
     }
 
-    IEnumerator startSection(GameObject Secondscreen, int videoNumber)
+    IEnumerator startSection(GameObject Secondscreen, int videoNumber, int[] factTime)
     {
         DataLogControler.Instance.WriteBreakInFile();
 
@@ -211,11 +240,13 @@ public class ExperimentControl : MonoBehaviour
         enableObject(Secondscreen);
         enableObject(backgroundPlanes);
 
+        disableController(controller);
+
         int length = 0;
 
         
-        length = PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoClips[videoNumber]);
-        PlayVideo(Secondscreen.GetComponent<VideoPlayer>(), factClips[videoNumber]);
+        length = PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoClips[videoNumber], null);
+        PlayVideo(Secondscreen.GetComponent<VideoPlayer>(), factClips[videoNumber], factTimes[videoNumber]);
         
 
         yield return new WaitForSeconds(length);
@@ -231,6 +262,8 @@ public class ExperimentControl : MonoBehaviour
         raycastController.writeTotalSectionViewingTimes();
 
         enableObject(PostClipCanvas);
+
+        StartCoroutine(enableController(controller, 20));
 
         if (videoCount > 3)
         {
@@ -261,7 +294,9 @@ public class ExperimentControl : MonoBehaviour
 
         enableObject(backgroundPlanes);
 
-        int length = PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoClips[videoNumber]);
+        disableController(controller);
+
+        int length = PlayVideo(mainScreen.GetComponent<VideoPlayer>(), videoClips[videoNumber], null);
 
         yield return new WaitForSeconds(length);
 
@@ -274,8 +309,9 @@ public class ExperimentControl : MonoBehaviour
 
         raycastController.writeTotalSectionViewingTimes();
 
-
         enableObject(PostClipCanvas);
+
+        StartCoroutine(enableController(controller, 20));
 
     }
 
@@ -288,12 +324,27 @@ public class ExperimentControl : MonoBehaviour
             StartCoroutine(startSection(videoCount));
         } else
         { 
-        StartCoroutine(startSection(Screens[videoCount], videoCount));
+        StartCoroutine(startSection(Screens[videoCount], videoCount, factTimes[videoCount]));
         }
     }
 
-    public int PlayVideo(VideoPlayer player, VideoClip clip)
+    IEnumerator sendHaptic(int factTime)
     {
+        yield return new WaitForSeconds(factTime);
+        Debug.Log("Sending haptic..");
+        controller.GetComponent<XRController>().SendHapticImpulse(0.75f, 2f);
+    }
+
+    public int PlayVideo(VideoPlayer player, VideoClip clip, int[] factTime)
+    {
+        if (factTime != null)
+        {
+            foreach (int i in factTime)
+            {
+                StartCoroutine(sendHaptic(i));
+            }
+        } 
+
         player.clip = clip;
 
         player.Play();

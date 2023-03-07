@@ -91,15 +91,9 @@ public class ViewRaycastController : MonoBehaviour
         
     }
 
-    public void test(int tet)
-    {
-        UnityEngine.Debug.Log("Test");
-    }
-
     public void enterMainScreen()
     {
         mainScreenStopwatch.Start();
-        UnityEngine.Debug.Log("User has entered main screen bounding box");
 
         DataLogControler.Instance.WriteToFile("User has entered main screen bounding box" + " - " + DateTime.Now);
     }
@@ -113,7 +107,6 @@ public class ViewRaycastController : MonoBehaviour
         string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
             ts.Hours, ts.Minutes, ts.Seconds,
             ts.Milliseconds / 10);
-        UnityEngine.Debug.Log("User has exited the main screen bounding box, they were in there for: " + elapsedTime);
 
         totalMainScreenTime = totalMainScreenTime + ts;
         totalMainScreenSectionTime = totalMainScreenSectionTime + ts;
@@ -125,7 +118,6 @@ public class ViewRaycastController : MonoBehaviour
     public void enterBackground()
     {
         backgroundStopwatch.Start();
-        UnityEngine.Debug.Log("User has entered background bounding box");
 
         DataLogControler.Instance.WriteToFile("User has entered background bounding box" + " - " + DateTime.Now);
 
@@ -141,7 +133,6 @@ public class ViewRaycastController : MonoBehaviour
         string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
             ts.Hours, ts.Minutes, ts.Seconds,
             ts.Milliseconds / 10);
-        UnityEngine.Debug.Log("User has exited the background bounding box, they were in there for: " + elapsedTime);
 
         totalBackgroundTime = totalBackgroundTime + ts;
         totalBackgroundSectionTime = totalBackgroundSectionTime + ts;
@@ -154,7 +145,6 @@ public class ViewRaycastController : MonoBehaviour
     public void enterSecondScreen()
     {
         secondScreenStopwatch.Start();
-        UnityEngine.Debug.Log("User has entered one of the second screen bounding boxes");
 
         DataLogControler.Instance.WriteToFile("User has entered one of the screen bounding boxes" + " - " + DateTime.Now);
 
@@ -169,7 +159,6 @@ public class ViewRaycastController : MonoBehaviour
         string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
             ts.Hours, ts.Minutes, ts.Seconds,
             ts.Milliseconds / 10);
-        UnityEngine.Debug.Log("User has exited one of the second screen bounding boxes, they were in there for: " + elapsedTime);
 
         totalSecondScreenTime = totalSecondScreenTime + ts;
         totalSecondScreenSectionTime = totalSecondScreenSectionTime + ts;
