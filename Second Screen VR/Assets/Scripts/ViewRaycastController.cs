@@ -4,6 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Methods used to control the raycast from the users gaze to gather information on what they are
+ * looking at to be recorded to a datalog. 
+ */
+
 public class ViewRaycastController : MonoBehaviour
 {
     public TimeSpan totalMainScreenTime;
@@ -35,6 +40,8 @@ public class ViewRaycastController : MonoBehaviour
 
     }
 
+    // Writes the total viewing times for all of the screens, background and main screen at the end of the experiment
+
     public void writeTotalViewingTimes()
     {
         
@@ -58,6 +65,8 @@ public class ViewRaycastController : MonoBehaviour
 
         DataLogControler.Instance.WriteToFile("Application quit. " + DateTime.Now);
     }
+
+    // Writes the total viewing times for each screen (if applicable), the background and main screen for a given section
 
     public void writeTotalSectionViewingTimes()
     {
@@ -91,12 +100,20 @@ public class ViewRaycastController : MonoBehaviour
         
     }
 
+    // Starts recording time for when user enters main screen bounding box
+
     public void enterMainScreen()
     {
         mainScreenStopwatch.Start();
 
         DataLogControler.Instance.WriteToFile("User has entered main screen bounding box" + " - " + DateTime.Now);
     }
+
+    /*
+     * 
+     * Stops recording time for when user exits main screen bounding box, adds the time to the total viewing time.
+     * Writes the time that the user was looking at the bounding box to the data log.
+     */
 
     public void exitMainScreen()
     {

@@ -7,8 +7,17 @@ using UnityEngine.Video;
 using UnityEngine;
 using TMPro;
 
+/*
+ * Methods and variables associated with the main experiment controller object. Controls the objects associated 
+ * with the experiment and calls the methods to run through the experiment.
+ */
+
 public class ExperimentControl : MonoBehaviour
 {
+    /*
+     * Instantiation of variables, these need to be allocated values and objects using the unity editor
+     */
+
     public ViewRaycastController raycastController;
 
     public GameObject mainScreen;
@@ -70,11 +79,15 @@ public class ExperimentControl : MonoBehaviour
         item.SetActive(false);
     }
 
+    // Enables the raycast component for the VR controller
+
     IEnumerator enableController(XRController item, int length)
     {
         yield return new WaitForSeconds(length);
         item.GetComponent<XRInteractorLineVisual>().enabled = true;
     }
+
+    // Disables raycast component for the VR controller 
 
     public void disableController(XRController item)
     {
@@ -91,6 +104,10 @@ public class ExperimentControl : MonoBehaviour
         mainScreen.GetComponent<XRSimpleInteractable>().enabled = false;
     }
 
+    /*
+     * Method used to organize the order in which users are presented the video content, takes in the experimental order number from 1 - 4
+     * and orders each video corresponding to the experimental configuration for that number
+     */
 
     public void organiseVideoAndScreenOrder(string videoOrderNumber)
     {
@@ -198,6 +215,10 @@ public class ExperimentControl : MonoBehaviour
         }
     }
 
+    /*
+     * Prepares and starts the experiment to start by parsing the users participant number and experimental configuration number
+     */
+
     public void startExperiment()
     {
 
@@ -228,6 +249,11 @@ public class ExperimentControl : MonoBehaviour
         enableObject(PostClipCanvas);
 
     }
+
+    /*
+     * Starts the next section of the experiment, takes in the screen to display the additional information, the video number corresponding
+     * to the video to play and the timestamps that the facts appear on the side screen
+     */
 
     IEnumerator startSection(GameObject Secondscreen, int videoNumber, int[] factTime)
     {
@@ -283,6 +309,11 @@ public class ExperimentControl : MonoBehaviour
 
     }
 
+    /*
+     * Starts the next section of the experiment, this version of the method is called when no second screen displaying information
+     * is present for that section. Enables bounding boxes and writes gaze statistics to datalogger component.
+     */
+
     IEnumerator startSection(int videoNumber)
     {
 
@@ -315,6 +346,11 @@ public class ExperimentControl : MonoBehaviour
 
     }
 
+    /*
+     * Method attached to button on the display shown to the user either at the start of the experiment or when a section has been
+     * completed. Disables the canvas and continues the experiment
+     */
+
     public void continueExperiment()
     {
         disableObject(PostClipCanvas);
@@ -328,12 +364,21 @@ public class ExperimentControl : MonoBehaviour
         }
     }
 
+    /*
+     * Sends a haptic pulse to the VR controller used in the experiment after a number of seconds
+     */
+
     IEnumerator sendHaptic(int factTime)
     {
         yield return new WaitForSeconds(factTime);
-        Debug.Log("Sending haptic..");
+        
         controller.GetComponent<XRController>().SendHapticImpulse(0.75f, 2f);
     }
+
+    /*
+     * Plays a given video clip on the given screen, if factTime variable is present then the time
+     * in the array is used to send a haptic pulse for when additional information is shown on the second screen
+     */
 
     public int PlayVideo(VideoPlayer player, VideoClip clip, int[] factTime)
     {
@@ -351,6 +396,10 @@ public class ExperimentControl : MonoBehaviour
 
         return ((int)player.clip.length);
     }
+
+    /*
+     * Initializes the log file used to document how long the user looked at each bounding box
+     */
 
     public bool InitializeLogFile(string participantNumber, string experimentNumber)
     {

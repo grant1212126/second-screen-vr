@@ -5,6 +5,10 @@ using System.IO;
 using System;
 using UnityEngine;
 
+/*
+ * Datalog controller, contains various methods for creating and writing to a data log to store data
+ */
+
 public class DataLogControler : MonoBehaviour
 {
     private static DataLogControler instance = null;
@@ -26,6 +30,8 @@ public class DataLogControler : MonoBehaviour
         instance = this;
     }
 
+    // Creates log folder to store data logs if it doesn't already exist
+
     public bool CreateLogFolder()
     {
         if (File.Exists(Path.Combine(Application.persistentDataPath, "ParticipantLogs"))) {
@@ -37,6 +43,8 @@ public class DataLogControler : MonoBehaviour
             return false;
         }
     }
+
+    // Creates a new log to write data to using the participants number
 
     public bool CreateNewLog(string participantNumber)
     {
@@ -58,6 +66,8 @@ public class DataLogControler : MonoBehaviour
 
         return true;
     }
+
+    // Writes a string to current data log
 
     public bool WriteToFile(string message)
     {
@@ -87,6 +97,8 @@ public class DataLogControler : MonoBehaviour
 
         return true;
     }
+
+    // Writes a break in the file
 
     public bool WriteBreakInFile()
     {

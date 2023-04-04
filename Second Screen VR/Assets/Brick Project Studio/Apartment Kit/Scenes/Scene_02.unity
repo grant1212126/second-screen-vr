@@ -3529,7 +3529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &120022135
 Transform:
   m_ObjectHideFlags: 0
@@ -3710,7 +3710,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a167fe33c7402064bba877934a03e239, type: 2}
+  - {fileID: 2100000, guid: 8c46380a9c6be8646b6e106a271300e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3796,7 +3796,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120022134}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
@@ -56567,20 +56567,25 @@ MonoBehaviour:
   PostClipCanvas: {fileID: 1829191821}
   Screens: []
   videoClips:
-  - {fileID: 32900000, guid: c098146694b47404dbba8cd7f4088df5, type: 3}
-  - {fileID: 32900000, guid: f11aa77121d48a247aeacc2ebb9c3f2a, type: 3}
-  - {fileID: 32900000, guid: fb0779adeed4d5a44af36b5b537e716f, type: 3}
-  - {fileID: 32900000, guid: 3cc68f7982ed706489421f6b291e14e8, type: 3}
+  - {fileID: 32900000, guid: 1a36d4cb06ad95f4c88855e61ed7444a, type: 3}
+  - {fileID: 32900000, guid: b3062b3a45598a048ac4be4cb470b1be, type: 3}
+  - {fileID: 32900000, guid: 8d102a1014b9fc2488721c26bd7b35cf, type: 3}
+  - {fileID: 32900000, guid: 2926c138a06214a4584f54ce2198b1c0, type: 3}
   factClips:
-  - {fileID: 32900000, guid: f50062ccd6432b1458e50ad7e7b75ab2, type: 3}
-  - {fileID: 32900000, guid: aea55be220de1a048b87aa63110a4a1f, type: 3}
-  - {fileID: 32900000, guid: 2f1d54ffa12daf94da7f0b98c9355551, type: 3}
-  - {fileID: 32900000, guid: 1d114f941c4f4f143a7937e0d4814ae4, type: 3}
+  - {fileID: 32900000, guid: 9ede297f709c06347be1e2bf429a4eec, type: 3}
+  - {fileID: 32900000, guid: 01895dd0388f97e449be9eff0ac710c9, type: 3}
+  - {fileID: 32900000, guid: 1bdbc4716fb1bb840b26b9c32d4c5806, type: 3}
+  - {fileID: 32900000, guid: 00cb81e1f7ac43046b018dd2b149b063, type: 3}
   factClipsPhone:
-  - {fileID: 32900000, guid: efb859ebc3cf8534db51f9fc6b03f969, type: 3}
-  - {fileID: 32900000, guid: 176216740bed4924380f42decbdb4a07, type: 3}
-  - {fileID: 32900000, guid: aeaffb51c769c474ebab70b857a00e67, type: 3}
-  - {fileID: 32900000, guid: 2002c3851555c33488064dcb45b5ec97, type: 3}
+  - {fileID: 32900000, guid: 753fe447a152e1549a12b8e2cf245b79, type: 3}
+  - {fileID: 32900000, guid: ce91760da88cbed49b17cce1758d704e, type: 3}
+  - {fileID: 32900000, guid: ab8dc3b83c250734485a3426bba81a4a, type: 3}
+  - {fileID: 32900000, guid: d1a8a05c59e3d6742805ed10605f17a9, type: 3}
+  factTimes1: 1900000071000000b600000022010000
+  factTimes2: 230000009b000000eb0000004c010000
+  factTimes3: 1e00000087000000c300000054010000
+  factTimes4: 190000007d000000c70000002c010000
+  controller: {fileID: 1238375021}
 --- !u!1 &1516628703
 GameObject:
   m_ObjectHideFlags: 0

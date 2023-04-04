@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/*
+ * Methods for the keypad at the start of the experiment, used to enter the Video order
+ * number using a raycast from the VR controller.
+ */
+
 public class VideoOrder : MonoBehaviour
 {
 
