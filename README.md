@@ -12,3 +12,7 @@ This application corresponds to an experiment to investigate how users interact 
 Scene_02 is included with the repository files with the correct objects instantiated, however, some variables from the scene need to be attatched to the Experiment Control Script in Experiment Controller object need to be manually allocated to their corresponding object/ value. For example, each video for the main screen needs to be imported into Unity and allocated to each element in the "Video Clips" array in the Experiment Controller object. An example setup of the Experiment Control script can be found in the "ExperimentSetup.png" image in the repository.
 
 Project was developed using unity editor version 2021.3.16f1
+
+# Acknowledgements
+
+Assets for the virtual living room were downloaded from the Unity Asset Store: https://assetstore.unity.com/packages/3d/environments/apartment-kit-124055
